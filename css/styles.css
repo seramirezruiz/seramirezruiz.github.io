@@ -10175,12 +10175,12 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
-
 header.masthead {
   padding-top: 15rem;
   padding-bottom: 6rem;
   text-align: center;
-  background-image: url("../img/header-bg-lg.jpg");
+  color: #fff;
+  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
