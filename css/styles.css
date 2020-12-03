@@ -10175,11 +10175,11 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+
 header.masthead {
   padding-top: 15rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
   background-image: url("../img/header-bg-lg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
