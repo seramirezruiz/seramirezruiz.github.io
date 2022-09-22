@@ -10225,7 +10225,7 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-@media (min-width: 1290px) {
+@media (min-width: 1440px) {
   header.masthead {
     padding-top: 40.5rem;
     padding-bottom: 12.5rem;
@@ -10289,7 +10289,7 @@ header.mast .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-@media (min-width: 1290px) {
+@media (min-width: 1440px) {
   header.mast {
     padding-top: 40.5rem;
     padding-bottom: 12.5rem;
