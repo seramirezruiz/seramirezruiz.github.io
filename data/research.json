@@ -82,15 +82,6 @@
       "abstract": "Interactions between the policy and academic communities can play an important role in political decisionmaking. Still, the fact that much of the policymaking process happens behind closed doors obscures our understanding of the relationships between political decision-makers with academic researchers. To address this challenge, this paper introduces a novel approach that leverages online behavioral data from social media to examine how legislators interact with researchers. By analyzing data from 3,670 lawmakers in 12 countries merged to a novel database of 410K academic researchers on Twitter, this study provides new insights into these otherwise hidden interactions. The findings suggest that lawmakers do follow, yet rarely visibly engage with researchers online. Lawmakers from conservative and radical right parties follow and engage less with researchers online than their colleagues from other parties. While the base engagement is relatively low across legislatures, it can increase when expertise gains salience. During the early stages of the COVID-19 pandemic, marked by policy uncertainty involving a novel and technically complex policy issue, lawmakers' overall inclination to follow and engage with scholars increased, most prominently targeting researchers from the medical sciences. These findings have implications for our understanding of politicians' strategic engagement with scientific expertise."
     },
     {
-      "id": "web-tracking-framework",
-      "title": "A Framework for Publishing Combined Web Tracking and Survey Data",
-      "coauthors": "in collaboration with Simon Munzert, Oliver Watteler, Johannes Breuer, Veronika Batzdorfer, Christina Eder, and Deborah Wiltshire",
-      "links": {
-        "preprint": "https://osf.io/preprints/osf/y4v8z_v1"
-      },
-      "abstract": "Combined survey and web tracking data have great potential for social-scientific research. They allow linking information on online behavior with data on reported offline behavior, opinions, and attitudes. At the same time, ethical, legal, and technical challenges make it difficult to disseminate linked web tracking data to the scientific community. This whitepaper aims to address these challenges by providing guidance for researchers and archivists, discussing legal, practical, and ethical aspects, disclosure risks, and establishing a framework for publishing web tracking data. Recommendations for best practices are also provided based on experiences from a research project funded by the German Consortium for the Social, Behavioural, Educational and Economic Sciences."
-    },
-    {
       "id": "bewt-bundestag",
       "title": "The Bundestag Expert Witness Tracker (BEWiT): A database of German Bundestag public expert hearings",
       "links": {},
@@ -109,6 +100,15 @@
       "coauthors": "in collaboration with Francesca Minetto and Roman Senninger",
       "links": {},
       "abstract": "The European Union is often portrayed as a major exporter of policy ideas and norms, yet the extent to which it relies on evidence and ideas from external actors remains a less explored aspect of European governance. This paper examines the role of international institutions (IIs) as evidence providers in EU policymaking. Drawing on a large-scale citation analysis of over 115,000 EU policy documents published between 2000 and 2024, we find that while EU institutions predominantly cite themselves, IIs consistently emerge as the most frequently referenced external actors, surpassing think tanks, academic institutions, and national governments. This pattern of II citation has remained remarkably stable over the past two and a half decades and spans a wide array of policy domains. However, IIs with strong economic regulatory mandates—particularly the OECD, IMF, and World Bank—dominate references, across policy areas and institutions. These institutions function not as peripheral observers but as epistemic anchors within the EU's policymaking ecosystem. Our results suggest that IIs play a central and underappreciated role in informing the EU policy process. They highlight a structurally embedded relationship between the EU and IIs, with implications for how legitimacy, expertise, and authority are negotiated in European policymaking. By tracing citation patterns, this study contributes to debates on the evolving relationship between the EU and global governance institutions, evidence-based policymaking, and expert information diffusion. It invites a reassessment of the EU's knowledge politics and challenges the notion of the EU as merely an exporter of policy ideas."
+    },
+    {
+      "id": "web-tracking-framework",
+      "title": "A Framework for Publishing Combined Web Tracking and Survey Data",
+      "coauthors": "in collaboration with Simon Munzert, Oliver Watteler, Johannes Breuer, Veronika Batzdorfer, Christina Eder, and Deborah Wiltshire",
+      "links": {
+        "preprint": "https://osf.io/preprints/osf/y4v8z_v1"
+      },
+      "abstract": "Combined survey and web tracking data have great potential for social-scientific research. They allow linking information on online behavior with data on reported offline behavior, opinions, and attitudes. At the same time, ethical, legal, and technical challenges make it difficult to disseminate linked web tracking data to the scientific community. This whitepaper aims to address these challenges by providing guidance for researchers and archivists, discussing legal, practical, and ethical aspects, disclosure risks, and establishing a framework for publishing web tracking data. Recommendations for best practices are also provided based on experiences from a research project funded by the German Consortium for the Social, Behavioural, Educational and Economic Sciences."
     },
     {
       "id": "online-news-environment",
