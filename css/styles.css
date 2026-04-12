@@ -9720,8 +9720,9 @@ button.bg-dark:focus {
 .text-paper {
   margin-left: 10%;
   margin-right: 10%;
+  max-width: 75%;
   font-size: 0.8rem;
-  text-align: center;
+  text-align: left;
 }
 
 .text-sh {
@@ -10583,6 +10584,19 @@ header.mast .masthead-heading {
 .publication-link { color: #B573F1; }
 
 .teaching-link{color: #a34400;}
+
+.teaching-upcoming {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #8856a7;
+  border: 1px solid #8856a7;
+  border-radius: 3px;
+  padding: 1px 5px;
+  vertical-align: middle;
+  margin-right: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 
 .publication {
   margin-top: 1.25rem;

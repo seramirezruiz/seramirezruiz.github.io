@@ -1,0 +1,80 @@
+{
+  "instructor": [
+    {
+      "id": "automated-data-collection",
+      "title": "Automated Data Collection",
+      "date": "June 2026",
+      "institution": "European University Institute",
+      "location": "Fiesole, Italy",
+      "upcoming": true,
+      "links": {}
+    },
+    {
+      "id": "advanced-causal-inference",
+      "title": "Advanced Topics in Causal Inference",
+      "date": "April 2026",
+      "institution": "European University Institute",
+      "location": "Fiesole, Italy",
+      "upcoming": true,
+      "links": {}
+    },
+    {
+      "id": "intro-to-r",
+      "title": "Introduction to R Programming",
+      "date": "Aug 2025",
+      "institution": "Hertie School (DS3)",
+      "location": "Berlin, Germany",
+      "upcoming": false,
+      "links": {
+        "materials": ""
+      }
+    },
+    {
+      "id": "data-science-tbilisi",
+      "title": "Data Science and Evidence-Based Policymaking",
+      "date": "Jun 2024",
+      "institution": "GIZ/Hertie School",
+      "location": "Tbilisi, Georgia",
+      "upcoming": false,
+      "links": {
+        "materials": ""
+      }
+    },
+    {
+      "id": "data-management",
+      "title": "Data Management for the Public Sector",
+      "date": "May 2024",
+      "institution": "GIZ/Hertie School",
+      "location": "Berlin, Germany",
+      "upcoming": false,
+      "links": {}
+    }
+  ],
+  "teachingAssistant": [
+    {
+      "id": "intro-data-science",
+      "title": "Introduction to Data Science",
+      "institution": "Hertie School",
+      "terms": "Fall 24",
+      "links": {
+        "materials": "https://github.com/intro-to-data-science-24/labs"
+      }
+    },
+    {
+      "id": "causal-inference-stats",
+      "title": "Causal Inference and Statistical Modeling",
+      "institution": "Hertie School",
+      "terms": "Spring 25, Spring 24, Fall 23, Spring 23, Spring 22, Spring 21, Fall 20, Spring 20",
+      "links": {
+        "materials": "https://seramirezruiz.github.io/2022-spring-stats2"
+      }
+    },
+    {
+      "id": "world-politics",
+      "title": "World Politics",
+      "institution": "Stony Brook University",
+      "terms": "Fall 16",
+      "links": {}
+    }
+  ]
+}
