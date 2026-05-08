@@ -3,13 +3,15 @@
     {
       "id": "global-north-policy",
       "authors": "<i>Ramirez-Ruiz, S.</i> and Senninger, R.",
-      "year": null,
+      "year": 2026,
       "title": "Government policy documents across 185 countries largely cite Global North sources",
       "journal": "Nature Human Behaviour",
-      "journalInfo": "in principle acceptance",
+      "journalInfo": null,
       "links": {
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lrfm63ylrk22",
-        "preprint": "https://osf.io/preprints/osf/w8q3y"
+        "preprint": "https://seramirezruiz.github.io/papers/ramirez_ruiz_senninger_policy_docs_nhb.pdf",
+        "paper": "https://www.nature.com/articles/s41562-026-02464-x",
+        "ungated": "https://rdcu.be/fhngy"
       },
       "abstract": "Evidence is widely acknowledged as essential for crafting effective public policies. Despite its critical role, we know surprisingly little about the specific sources that inform decisions around the world. This paper explores the sources of evidence in the policymaking arena by analyzing evidence cited in over 1.2 million policy documents from 185 countries. Our analyses capture references to 3.5 million scholarly works and 740,000 policy sources including contributions from government agencies, academic researchers, international organizations, and think tanks. By focusing on the documented, accessible, and digitally visible evidence available to the global policymaking community, we map global patterns of evidence use, highlighting regional and policy domain variation. Our findings reveal a pronounced concentration of attention: the vast majority of cited evidence—both academic and policy—is produced in the Global North, even in documents authored by governments in the Global South. These patterns persist across policy areas, though with notable variation in the types of sources commonly used. Overall, the findings reveal a somewhat concentrated evidence landscape in which a small number of countries disproportionately serve as global reference points, underscoring persistent asymmetries in visibility, influence, and access within the international policy knowledge ecosystem."
     },
@@ -65,7 +67,7 @@
       "links": {
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lbooldug2p23",
         "paper": "https://doi.org/10.1080/10584609.2020.1843572",
-        "ungated": "https://osf.io/preprints/utdn4/",
+        "preprint": "https://doi.org/10.31219/osf.io/utdn4",
         "materials": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FBUN9DF"
       },
       "abstract": "We review the influence of voting advice applications (VAAs) on three core outcomes: turnout, vote choice, and issue knowledge. In a meta-analysis of 55 effects reported in 22 studies, comprising 73,673 participants in 9 countries, we find strong evidence for positive effects of VAA usage on reported turnout (OR = 1.87; 95% CI = [1.50, 2.33]) and vote choice (OR = 1.44; 95% CI = [1.16, 1.78]) as well as modest evidence on knowledge increase (partial correlation = 0.09; 95% CI = [−0.01, 0.18]). At the same time, we observe large heterogeneity in effect sizes, for which study design turns out to be a key driver. Effects are substantively weaker in causally more rigorous experimental studies. We highlight the need for more well-powered experimental research as well as studies focusing on the acquisition of knowledge in VAA usage."

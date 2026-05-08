@@ -16,9 +16,9 @@
 
     const linkConfigs = [
       { key: 'thread', icon: 'fa fa-cloud', iconColor: '#87CEEB', label: 'Thread' },
-      { key: 'preprint', icon: 'ai ai-osf', iconColor: null, label: 'Preprint' },
       { key: 'paper', icon: 'ai ai-open-access', iconColor: null, label: 'Paper' },
-      { key: 'ungated', icon: 'ai ai-osf', iconColor: null, label: 'Ungated' },
+      { key: 'ungated', emoji: '🔓', label: 'Ungated' },
+      { key: 'preprint', icon: 'ai ai-osf', iconColor: null, label: 'Preprint' },
       { key: 'materials', icon: 'ai ai-open-data', iconColor: '#696969', label: 'Materials' }
     ];
 
@@ -26,9 +26,15 @@
 
     linkConfigs.forEach(config => {
       if (links[config.key]) {
-        const iconStyle = config.iconColor ? ` style="color:${config.iconColor}"` : '';
+        let iconHtml;
+        if (config.emoji) {
+          iconHtml = config.emoji;
+        } else {
+          const iconStyle = config.iconColor ? ` style="color:${config.iconColor}"` : '';
+          iconHtml = `<i class="${config.icon}"${iconStyle}></i>`;
+        }
         parts.push(
-          `<span class="paper-link"><i class="${config.icon}"${iconStyle}></i> ` +
+          `<span class="paper-link">${iconHtml} ` +
           `<a href="${links[config.key]}" target="_blank">${config.label}</a></span>`
         );
       }

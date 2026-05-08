@@ -1,6 +1,15 @@
 {
   "instructor": [
     {
+      "id": "intermediate-quant-methods",
+      "title": "Intermediate Quantitative Methods",
+      "date": "September 2026",
+      "institution": "European University Institute",
+      "location": "Fiesole, Italy",
+      "upcoming": true,
+      "links": {}
+    },
+    {
       "id": "automated-data-collection",
       "title": "Automated Data Collection",
       "date": "June 2026",
@@ -15,7 +24,7 @@
       "date": "April 2026",
       "institution": "European University Institute",
       "location": "Fiesole, Italy",
-      "upcoming": true,
+      "upcoming": false,
       "links": {}
     },
     {
@@ -25,9 +34,7 @@
       "institution": "Hertie School (DS3)",
       "location": "Berlin, Germany",
       "upcoming": false,
-      "links": {
-        "materials": ""
-      }
+      "links": {}
     },
     {
       "id": "data-science-tbilisi",
@@ -36,9 +43,7 @@
       "institution": "GIZ/Hertie School",
       "location": "Tbilisi, Georgia",
       "upcoming": false,
-      "links": {
-        "materials": ""
-      }
+      "links": {}
     },
     {
       "id": "data-management",
@@ -56,18 +61,14 @@
       "title": "Introduction to Data Science",
       "institution": "Hertie School",
       "terms": "Fall 24",
-      "links": {
-        "materials": "https://github.com/intro-to-data-science-24/labs"
-      }
+      "links": {}
     },
     {
       "id": "causal-inference-stats",
       "title": "Causal Inference and Statistical Modeling",
       "institution": "Hertie School",
       "terms": "Spring 25, Spring 24, Fall 23, Spring 23, Spring 22, Spring 21, Fall 20, Spring 20",
-      "links": {
-        "materials": "https://seramirezruiz.github.io/2022-spring-stats2"
-      }
+      "links": {}
     },
     {
       "id": "world-politics",
