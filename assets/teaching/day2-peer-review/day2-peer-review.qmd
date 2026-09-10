@@ -1,0 +1,194 @@
+---
+title: "One Reader, One Proposal"
+subtitle: "Day 2 Peer Activity | SPS Summer Academy"
+author: "Sebastian Ramirez-Ruiz"
+institute: "European University Institute (EUI)"
+format:
+  revealjs:
+    theme: [default, ../template/sebastian-slides.scss]
+    slide-number: true
+    incremental: false
+    width: 1600
+    height: 900
+    margin: 0.07
+    transition: fade
+    transition-speed: fast
+    highlight-style: github
+    code-line-numbers: false
+    fig-align: center
+    footer: "One Reader, One Proposal | Day 2"
+    include-in-header:
+      text: |
+        <script>
+        window.addEventListener('load', function() {
+          if (typeof Reveal === 'undefined') return;
+          if (window._inverseSyncAttached) return;
+          window._inverseSyncAttached = true;
+          function syncInverse() {
+            var current = Reveal.getCurrentSlide();
+            document.querySelector('.reveal').classList.toggle(
+              'on-inverse', current && current.classList.contains('inverse')
+            );
+          }
+          Reveal.on('slidechanged', syncInverse);
+          Reveal.on('ready', syncInverse);
+          Reveal.on('ready', function() {
+            document.querySelectorAll('.reveal a').forEach(function(a) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+            });
+          });
+        });
+        </script>
+execute:
+  echo: false
+  eval: false
+  warning: false
+  message: false
+---
+
+## {.blackout .center}
+
+::: {style="font-size: 1.25em; color: #aaaaaa; line-height: 1.6;"}
+By now, we have heard you talk about your project.<br>
+Now, you will get a someone to dive into what you wrote.
+:::
+
+::: {.fragment style="font-size: 1.6em; font-weight: 700; color: #639E7D; margin-top: 0.7em;"}
+The gap between those two is one of the main things what we are looking for.
+:::
+
+
+## Why this is different from presenting to the room
+
+:::: {.columns}
+::: {.column width="47%"}
+
+::: {.fragment .box}
+**Presenting**
+
+Public and timed. Necessarily surface-level — you could only tell the room what fit those seven minutes.
+:::
+
+:::
+::: {.column width="47%"}
+
+::: {.fragment .box-red}
+**This activity**
+
+Private, unhurried, focused. You already know what drives them... now you get the whole document, not just the pitch.
+:::
+
+:::
+::::
+
+<div style="height: 14px;"></div>
+
+::: {.fragment}
+That combination — their motivation *and* their full proposal — lets you catch things the room could not.
+:::
+
+
+## The feedback session in three steps
+
+```{=html}
+<div style="display:flex; align-items:center; gap:0.4em; justify-content:center; margin-top:1.5em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1.2em 1.4em; text-align:center; min-width:220px;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.9em; margin-bottom:0.4em;">1. Share</div>
+    <div style="font-size:0.7em; color:#555;">What drives you — from yesterday's freewrite</div>
+    <div style="font-family:monospace; font-size:0.7em; color:#c6273b; margin-top:0.5em;">~10-15 min</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.4em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1.2em 1.4em; text-align:center; min-width:220px;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.9em; margin-bottom:0.4em;">2. Read</div>
+    <div style="font-size:0.7em; color:#555;">Their full proposal, in print, in silence</div>
+    <div style="font-family:monospace; font-size:0.7em; color:#c6273b; margin-top:0.5em;">~15–20 min</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.4em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:1.2em 1.4em; text-align:center; min-width:220px;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.9em; margin-bottom:0.4em;">3. Discuss</div>
+    <div style="font-size:0.7em; color:#555;">What's missing. Talk it through, then write it down</div>
+    <div style="font-family:monospace; font-size:0.7em; color:#c6273b; margin-top:0.5em;">~20–25 min</div>
+  </div>
+
+</div>
+```
+
+
+## Step 1 — share what drives you
+
+::: {.fragment}
+Pull out yesterday's freewrite. Read it to your yourself and tell them what's in it — not the polished pitch, the raw version: what actually pulled you toward this question.
+:::
+
+<div style="height: 12px;"></div>
+
+::: {.fragment}
+::: {.box}
+Why bother? Because the personal stake almost never fully makes it into the formal document. Once your partner knows what actually drives you, they can spot exactly where the page falls short of it.
+:::
+:::
+
+
+## Step 2 — read their proposal closely
+
+::: {.incremental}
+- Read the full printout. We want to go beyong your memory of their pitch. The written document has to stand alone. That is what you are checking.
+- Mark it up as you go: questions, places that feel thinner than what they told you or presented, anything unclear.
+- Read like the stranger we talked about yesterday (*someone clever, in the discipline, not in their literature*)
+:::
+
+
+## Step 3 — name what's missing
+
+::: {.fragment}
+You now have three sources no one else in the room has all at once:
+:::
+
+<div style="height: 8px;"></div>
+
+:::: {.columns}
+::: {.column width="31%"}
+::: {.fragment .box style="text-align:center; font-size:0.78em;"}
+What they told you<br>**drives them**
+:::
+:::
+::: {.column width="31%"}
+::: {.fragment .box style="text-align:center; font-size:0.78em;"}
+What they **presented**<br>and the feedback they got
+:::
+:::
+::: {.column width="31%"}
+::: {.fragment .box style="text-align:center; font-size:0.78em;"}
+The **six lenses**<br>from yesterday morning
+:::
+:::
+::::
+
+<div style="height: 14px;"></div>
+
+::: {.fragment}
+For each lens — question, positioning, methodology, feasibility, fit, timeline — ask: does the *document* show this, or did I only get it from hearing them talk?
+:::
+
+<div style="height: 10px;"></div>
+
+::: {.fragment}
+::: {.box-red}
+That gap — between what you now know about them and what is actually on the page — is the most useful thing you can surface. Don't just make a list on your own: talk it through with your partner.
+:::
+:::
+
+
+## Talk it through, then write it down
+
+::: {.incremental}
+- Discuss what you noticed before you finalize anything — ask directly: "did you mean to leave this out, or did it just not make it onto the page?"
+- Still put it in writing before you are done — a short, specific note, not just a memory of the conversation.
+- Same spirit as the room feedback: the goal is to surface gaps together, not to argue about them.
+:::
