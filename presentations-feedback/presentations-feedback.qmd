@@ -1,0 +1,742 @@
+---
+title: "Drafting (and Defending) a Strong Proposal"
+subtitle: "Institutions, Parties & Political Behavior | SPS Summer Academy"
+author: "Sebastian Ramirez-Ruiz"
+institute: "European University Institute (EUI)"
+date: "September 10, 2026"
+format:
+  revealjs:
+    theme: [default, ../template/sebastian-slides.scss]
+    slide-number: true
+    incremental: false
+    width: 1600
+    height: 900
+    margin: 0.07
+    transition: fade
+    transition-speed: fast
+    highlight-style: github
+    code-line-numbers: false
+    fig-align: center
+    footer: "Drafting (and Defending) a Strong Proposal"
+    include-in-header:
+      text: |
+        <script>
+        window.addEventListener('load', function() {
+          if (typeof Reveal === 'undefined') return;
+          if (window._inverseSyncAttached) return;
+          window._inverseSyncAttached = true;
+          function syncInverse() {
+            var current = Reveal.getCurrentSlide();
+            document.querySelector('.reveal').classList.toggle(
+              'on-inverse', current && current.classList.contains('inverse')
+            );
+          }
+          Reveal.on('slidechanged', syncInverse);
+          Reveal.on('ready', syncInverse);
+          Reveal.on('ready', function() {
+            document.querySelectorAll('.reveal a').forEach(function(a) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+            });
+          });
+        });
+        </script>
+execute:
+  echo: false
+  eval: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+#| eval: true
+library(fontawesome)
+```
+
+---
+
+<div style="height: 60px;"></div>
+
+<img src="../figures/sebastianramirezruiz.jpg" class="profile-pic"/>
+
+<br>
+
+<div class="pad-sides">
+
+`r fa('address-book')` I am [Sebastian Ramirez-Ruiz](https://seramirezruiz.github.io/), or just Sebastian.
+
+`r fa('graduation-cap')` Max Weber Fellow & Part-time Assistant Professor in Quantitative Methods (Department of Political and Social Sciences)
+
+`r fa('envelope')` [sebastian.ramirezruiz@eui.eu](mailto:sebastian.ramirezruiz@eui.eu)
+
+</div>
+
+<br>
+
+<div class="pad-sides">
+[I am a **computational social scientist**]{.fragment} [researching how **political decisionmakers** engage with **evidence** and **information**,]{.fragment} [and how these interactions shape policy and governance across contexts.]{.fragment}
+</div>
+
+
+# How about you? {.blackout}
+
+
+## {.inverse .center}
+
+<div style="font-size: 1.4em; font-weight: 700; margin-bottom: 0.5em;">Let's get started ✏️ <span style="font-size: 0.55em; font-weight: 400; opacity: 0.85;">(~5 min, solo)</span></div>
+
+<div style="font-size: 1.05em; line-height: 1.8; margin-bottom: 0.7em;">
+Open a blank doc (or take a piece of paper) and <strong>freewrite</strong>.<br>
+That means: write continuously, don't stop, don't edit, don't second-guess.<br>
+Keep your fingers (or the pen) moving.
+</div>
+
+<div class="fragment" style="font-size: 1.05em; font-weight: 600; line-height: 1.6; background: rgba(255,255,255,0.15); border-radius: 8px; padding: 0.5em 1em;">
+Start from the seed: <em>"What drove me to want to do research the first place was..."</em><br>
+What's the question that wouldn't let you go... the one that made research feel necessary, not just interesting?
+</div>
+
+
+## What we want to accomplish in these two days
+
+```{=html}
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1em; margin-top:0.6em; height:76%;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1.4em 1.5em; position:relative; overflow:hidden;">
+    <div style="font-size:4em; font-weight:900; color:#dde3ed; position:absolute; top:-0.05em; right:0.2em; line-height:1; font-family:sans-serif;">01</div>
+    <div style="font-weight:700; color:#1d375b; font-size:0.9em; position:relative; margin-bottom:0.6em;">Make your question defensible</div>
+    <div style="font-size:0.74em; color:#555; line-height:1.55; position:relative;">A strong proposal survives scrutiny from people who don't share your priors. In many instances, those 'filtering in' might only have tangential knowledge from your specific domain. We'll go through exactly what's being <strong>checked for</strong>.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1.4em 1.5em; position:relative; overflow:hidden;">
+    <div style="font-size:4em; font-weight:900; color:#dde3ed; position:absolute; top:-0.05em; right:0.2em; line-height:1; font-family:sans-serif;">02</div>
+    <div style="font-weight:700; color:#1d375b; font-size:0.9em; position:relative; margin-bottom:0.6em;">Say it out loud</div>
+    <div style="font-size:0.74em; color:#555; line-height:1.55; position:relative;">Writing and pitching are <strong>different skills</strong>. While your written proposal will 'open the door', <strong>getting in</strong> will likely depend on your ability to convey your research idea clearly.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:1.4em 1.5em; position:relative; overflow:hidden;">
+    <div style="font-size:4em; font-weight:900; color:#f5d0d5; position:absolute; top:-0.05em; right:0.2em; line-height:1; font-family:sans-serif;">03</div>
+    <div style="font-weight:700; color:#c6273b; font-size:0.9em; position:relative; margin-bottom:0.6em;">Learn to give feedback that lands</div>
+    <div style="font-size:0.74em; color:#555; line-height:1.55; position:relative;">Good feedback is a <strong>skill</strong>, not an instinct. You'll practice being a discussant for every proposal in the room.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:1.4em 1.5em; position:relative; overflow:hidden;">
+    <div style="font-size:4em; font-weight:900; color:#f5d0d5; position:absolute; top:-0.05em; right:0.2em; line-height:1; font-family:sans-serif;">04</div>
+    <div style="font-weight:700; color:#c6273b; font-size:0.9em; position:relative; margin-bottom:0.6em;">Leave with a concrete revision plan</div>
+    <div style="font-size:0.74em; color:#555; line-height:1.55; position:relative;">Not a polished proposal — a short, specific list of <strong>what to work on</strong> before you submit it.</div>
+  </div>
+
+</div>
+```
+
+## The structure of our two days
+
+:::: {.columns}
+::: {.column width="47%"}
+
+<div style="text-align:center; font-weight:700; color:#1d375b; font-size:0.85em; letter-spacing:0.06em; margin-bottom:0.6em;">DAY 1</div>
+
+```{=html}
+<div style="display:flex; flex-direction:column; gap:0.4em;">
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.7em; width:105px;">10:00–10:45</div>
+    <div style="font-size:0.72em; color:#555;">Introductory presentation</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#ffffff; border-left:4px dashed #c2c8d1; border-radius:4px; padding:0.4em 0.7em; opacity:0.7;">
+    <div style="font-family:monospace; font-weight:700; color:#888; font-size:0.7em; width:105px;">10:45–11:00</div>
+    <div style="font-size:0.7em; color:#888;">Coffee break</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.7em; width:105px;">11:00–12:40</div>
+    <div style="font-size:0.72em; color:#555;">Research presentations (5 × 20 min)</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.7em; width:105px;">12:40–13:00</div>
+    <div style="font-size:0.72em; color:#555;">General discussion</div>
+  </div>
+
+</div>
+```
+
+:::
+::: {.column width="47%"}
+
+<div style="text-align:center; font-weight:700; color:#c6273b; font-size:0.85em; letter-spacing:0.06em; margin-bottom:0.6em;">DAY 2</div>
+
+```{=html}
+<div style="display:flex; flex-direction:column; gap:0.4em;">
+
+  <div class="fragment" style="display:flex; align-items:center; background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#c6273b; font-size:0.7em; width:105px;">10:00–11:40</div>
+    <div style="font-size:0.72em; color:#555;">Research presentations (5 × 20 min)</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#ffffff; border-left:4px dashed #c2c8d1; border-radius:4px; padding:0.4em 0.7em; opacity:0.7;">
+    <div style="font-family:monospace; font-weight:700; color:#888; font-size:0.7em; width:105px;">11:40–11:55</div>
+    <div style="font-size:0.7em; color:#888;">Coffee break</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#c6273b; font-size:0.7em; width:105px;">11:55–12:40</div>
+    <div style="font-size:0.72em; color:#555;">Peer sessions</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.5em 0.7em;">
+    <div style="font-family:monospace; font-weight:700; color:#c6273b; font-size:0.7em; width:105px;">12:40–13:00</div>
+    <div style="font-size:0.72em; color:#555;">Final discussion / questions</div>
+  </div>
+
+</div>
+```
+
+:::
+::::
+
+## This session
+
+```{=html}
+<div style="display:flex; flex-direction:column; gap:0.6em; margin-top:0.8em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.88em;">Where to find research problems</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Some places strong puzzles actually come from, and how to tell a real one from a gap that doesn't need filling</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.88em;">What makes a strong proposal</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Research question, literature positioning, mechanisms, methodology, feasibility, fit, and timeline</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.88em;">Presentations & feedback</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">You've already prepared your pitch. Everyone presents for ≈7 minutes and gets ≈10 minutes of live feedback</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.88em;">Coming up with an actionable plan</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Turning today's feedback into a concrete, sequenced revision plan before you touch the document again</div>
+  </div>
+
+</div>
+```
+
+
+# Where to Find Research Problems {.inverse}
+
+
+## What counts as a "research problem"?
+
+::: {.fragment}
+::: {.box}
+A research problem is a **puzzle** about how (*in our case*) institutions, parties, or political behavior actually work... not just a *topic*.
+:::
+:::
+
+<div style="height: 10px;"></div>
+
+::: {.fragment .box-red}
+"I'm interested in populism" or "I study political parties" isn't a question yet. You need something **unexplored**, **overlooked**, or **unresolved** about it.
+:::
+
+<div style="height: 14px;"></div>
+
+::: {.incremental}
+- **IMO:** Good problems combine two things: a clearly stated **puzzle**, and a reason it **matters** — theoretically (it advances a debate) and/or practically.
+- [Disciplinary note:]{.hl-red} There might be some differences across disciplines around the acceptable framing of puzzles. Some expect an explicit "so what", while others might be more accepting of puzzles framed around social structure, meaning, or process, without needing a direct payoff. **Both are legitimate**, but know which conversation you're entering.
+:::
+
+
+## Some places real research problems come from
+
+```{=html}
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.7em; margin-top:0.8em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">An empirical anomaly</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Something the dominant theory says shouldn't happen... but does.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">A theoretical contradiction</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Two established theories predict opposite outcomes in a case you can actually observe.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">An untested scope condition</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">A finding proven in one setting (advanced democracies, one country) that's never been checked elsewhere.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.82em; margin-bottom:0.3em;">A newly usable data source</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Administrative records, digitized archives, text, audio, video... that make an old question answerable for the first time.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.82em; margin-bottom:0.3em;">A live puzzle in the world</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Something happening right now that existing frameworks have difficulty explaining.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.82em; margin-bottom:0.3em;">Your own recurring "wait, why?" (i.e., vibes)</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">A moment from your reading or experience you genuinely can't let go of.</div>
+  </div>
+
+</div>
+```
+
+## Where problems come from at the macro level
+
+::: {.incremental}
+- [Shared disciplinary debates:]{.hl-blue} party system fragmentation and dealignment, institutional persistence vs. change, the social bases of political behavior, the link between social structure and political identity.
+- [Big questions → incremental application cycles:]{.hl-blue} Major shifts (behavioral revolution, historical institutionalism, relational sociology, causal inference, computational methods, AI) open waves of new applications and lenses to study 'big questions'.
+- [External priorities:]{.hl-blue} Funders, policy relevance, and current events (democratic backsliding, polarization, misinformation, populist mobilization) pull research agendas in our fields. Good for relevance and fundability, but risks everyone converging on the same 'trendy' topic.
+:::
+
+
+## Not every gap is a problem
+
+::: {.fragment}
+::: {.box-red}
+A gap existing is not, by itself, a real problem. Plenty of gaps are gaps for a reason — before you commit a proposal to one, some things to keep in mind:
+:::
+:::
+
+<div style="height: 12px;"></div>
+
+::: {.incremental}
+- **Stakes**: would studying this lead to actual 'learning' of some form — about this case, this population, this institution? (Confirming a known pattern holds somewhere new is still valuable; it doesn't have to overturn anything.)
+- **Traction**: could you actually gather evidence that would let you be *wrong* about it?
+- **Durability**: will this still feel worth answering in year three, once the initial excitement has worn off?
+:::
+
+
+## On "scouting" and finding your own puzzle
+
+::: {.fragment}
+**IME** our sense of the "real" question <strong>sharpens</strong> as we read, talk, and work. You start out interested in "party decline" and realize you're actually drawn to how party organizations lose their grip on collective identity.
+:::
+
+<div style="height: 10px;"></div>
+
+::: {.fragment}
+::: {.box-red}
+**Practical tip**: keep a running list of 10–20 loose questions that genuinely interest you. Read new work against that list, and notice when something clicks.
+:::
+:::
+
+
+<div style="height: 12px;"></div>
+
+::: {.fragment}
+::: {.box style="max-width:80%; margin:0.8em auto; padding:1em 2.2em; text-align:center; border-left:none; border-top:4px solid #1d375b; color:#222; line-height:1.7;"}
+The sharpening doesn't happen in one sitting... it happens gradually. This workshop is one more go at it: what you **freewrote** this morning, what you **drafted** into your proposal, what you **say out loud** later today or tomorrow, and what you **revise** afterward are the same puzzle getting **sharper** each time.
+:::
+:::
+
+## Some thoughts for aspiring researchers (and Ph.D. applicants)
+
+::: {.incremental}
+- There's no single correct way to find a dissertation topic. Deliberate reading, reactive problem-solving, proactive scouting, talking to people... topics come in different forms.
+- A good research problem needs both a genuine puzzle and a clear stake. Invest some real time here before jumping to the specifics of individual papers.
+- Finding the problem is the hard, often underrated first step. How you go about answering it (i.e., case selection, data, method) is a separate, later challenge.
+:::
+
+<div style="height: 14px;"></div>
+
+::: {.fragment}
+::: {.box}
+You're not starting from zero... being here means you already convinced a committee you have a version of a puzzle worth pursuing. The work this week isn't finding one from nothing; it's recognizing it clearly enough to sharpen it under some scrutiny.
+:::
+:::
+
+
+# What Makes a Strong Proposal {.inverse}
+
+
+## {.blackout .center}
+
+::: {style="font-size: 1.2em; color: #aaaaaa; line-height: 1.6;"}
+You've spent months (or years) thinking about the details in your idea.<br>
+Whoever reads your proposal has spent <strong>none</strong>.
+:::
+
+::: {.fragment style="font-size: 1.7em; font-weight: 700; color: #639E7D; margin-top: 0.7em;"}
+Write for someone in your discipline... not in your literature.
+:::
+
+
+## Every proposal should answer (at least) three questions
+
+::: {.incremental}
+- [What]{.hl-red} is your central question or puzzle?
+- [Why]{.hl-red} should anybody care... and specifically, who?
+- [How]{.hl-red} will you answer it?
+:::
+
+<div style="height: 14px;"></div>
+
+::: {.fragment}
+::: {.box}
+In writing, these aren't three separate sections. They should read cohesively as one argument: the puzzle only matters *because of* the why, and the how only makes sense once the reader already believes the why.
+:::
+:::
+
+
+## Research question... a topic is not a question
+
+<div style="height: 48px;"></div>
+
+:::: {.columns}
+::: {.column width="47%"}
+
+::: {.fragment .box-red}
+**Topic dressed as a question**
+
+"How has democratic backsliding changed party competition?"
+:::
+
+:::
+::: {.column width="47%"}
+
+::: {.fragment .box}
+**An actual puzzle**
+
+"Under what conditions do incumbents dismantle checks on their own power *without* triggering an electoral backlash?"
+:::
+
+:::
+::::
+
+<div style="height: 18px;"></div>
+
+::: {.fragment style="text-align:center; color:#639E7D; font-weight:700; font-size:1.05em;"}
+What, in your view, actually differentiates these two?
+:::
+
+## Positioning in the literature
+
+::: {.fragment}
+::: {.box-red}
+A gap existing is not, by itself, a real problem. Plenty of gaps are gaps for a reason — before you commit a proposal to one — <strong>you have to argue this one is</strong>.
+:::
+:::
+
+<div style="height: 12px;"></div>
+
+::: {.fragment}
+Some ways to make that case:
+:::
+
+::: {.incremental}
+- **The tools exist but nobody has used them**
+- **The claim has only been tested in a narrow slice** 
+- **Two camps quietly assume different things**
+- **The world keeps producing cases the dominant account can't explain**
+:::
+
+
+
+## Mechanisms — "why," not just "that"
+
+::: {.fragment}
+A correlation between two macro trends is a **pattern**, not an explanation. A strong proposal (*in most cases*) shows the mechanism connecting them to back the assumptions up.
+:::
+
+<div style="height: 20px;"></div>
+
+```{=html}
+<div style="display:flex; align-items:center; gap:0.4em; justify-content:center; margin-top:1em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1em 1.1em; text-align:center; min-width:190px;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.78em;">Macro condition</div>
+    <div style="font-size:0.68em; color:#555; margin-top:0.35em;">Declining social trust</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.4em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1em 1.1em; text-align:center; min-width:190px;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.78em;">Individual belief</div>
+    <div style="font-size:0.68em; color:#555; margin-top:0.35em;">"Mainstream parties won't represent me"</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.4em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1em 1.1em; text-align:center; min-width:190px;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.78em;">Individual behavior</div>
+    <div style="font-size:0.68em; color:#555; margin-top:0.35em;">Votes for an outsider/niche party</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.4em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:1em 1.1em; text-align:center; min-width:190px;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.78em;">Macro outcome</div>
+    <div style="font-size:0.68em; color:#555; margin-top:0.35em;">Party system fragmentation</div>
+  </div>
+
+</div>
+```
+
+<div style="height: 20px;"></div>
+
+::: {.fragment}
+Naming some model of the world (*data generation process*) — even briefly — is usually worth more to a reader than another page of description.
+:::
+
+
+## Methodology — problem-driven, not method-driven
+
+::: {.incremental}
+- The method follows from the question. If you can name your method before you can state your question precisely, something's backwards.
+- **Justify case selection** explicitly: why this data form, country, party, or time span — and if it's comparative, why these cases and not others?
+:::
+
+<div style="height: 10px;"></div>
+
+::: {.fragment}
+::: {.box}
+If you can't say why *this* method answers your specific question better than an obvious alternative, expect a reviewer to ask.
+:::
+:::
+
+
+## Feasibility — will you actually get this done?
+
+::: {.fragment}
+Feasibility isn't a formality at the end of the proposal — it's often what separates a strong (*fundable*) project from an appealing idea.
+:::
+
+<div style="height: 10px;"></div>
+
+::: {.fragment}
+It's not about having everything figured out. It's about **signals** that show a reader this isn't just aspirational:
+:::
+
+<div style="height: 8px;"></div>
+
+```{=html}
+<div style="display:flex; flex-direction:column; gap:0.5em; margin-top:0.6em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.85em;">Specificity over gesture</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Name the exact source, you intend to use — or, if you'd be collecting new data yourself, a concrete signal that you're the person who can actually do it (access, language, network, prior fieldwork).</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.85em;">(If possible) evidence of a first step already taken</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Something that shows the plan has already survived contact with reality.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.85em;">A friction point you've priced in</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">Response rates, translation, access negotiations, ethics review timelines — name the realistic obstacle. Leaving it out reads as not having thought about it.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.55em 0.9em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.85em;">A fallback</div>
+    <div style="font-size:0.75em; color:#555; margin-top:0.2em;">What you'd still be able to answer if your first-choice data or access falls through.</div>
+  </div>
+
+</div>
+```
+
+
+## {.blackout .center}
+
+::: {style="font-size: 1.2em; color: #aaaaaa; line-height: 1.6;"}
+So far, everything we've covered — the question, the gap, the design —\
+would matter in any research proposal.
+:::
+
+::: {.fragment style="font-size: 1.7em; font-weight: 700; color: #639E7D; margin-top: 0.7em;"}
+<span style="color:#ffffff; font-weight:400;">(If you are thinking about a PhD...)</span> This one has to convince someone to supervise you, specifically, for multiple years.
+:::
+
+
+## Fit with program and supervisor
+
+::: {.fragment}
+::: {.box-red}
+"I want to work at the EUI (*or with Professor X*) because they're well known" is not fit. Fit runs in <strong>both directions</strong> — what they can offer you, and what you bring to them.
+:::
+:::
+
+<div style="height: 12px;"></div>
+
+:::: {.columns}
+::: {.column width="47%"}
+
+::: {.fragment}
+**What they offer you**
+:::
+
+::: {.incremental}
+- Methodological training or data infrastructure you'd actually use.
+- Mentorship in the specific debate you're entering, not just the subfield label.
+- A research culture that matches how you want to work.
+:::
+
+:::
+::: {.column width="47%"}
+
+::: {.fragment}
+**What you bring them**
+:::
+
+::: {.incremental}
+- Some expertise that extends what the department or research group can study.
+- Some technical skill that isn't already covered in-house
+- Some signal that you'll be a colleague who adds to the room, not just a project to supervise.
+:::
+
+:::
+::::
+
+<div style="height: 12px;"></div>
+
+::: {.fragment}
+::: {.box}
+Most times, it helps to name 'names' and say precisely what in their work your project speaks to — and what, specifically, you'd add to it.
+:::
+:::
+
+
+## Timeline — what four years actually looks like
+
+```{=html}
+<div style="display:flex; flex-direction:column; gap:0.4em; margin-top:0.8em;">
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.9em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.85em; width:70px;">Year 1</div>
+    <div style="font-size:0.78em; color:#555;">Coursework, refine the research question, pilot data access/collection</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.9em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.85em; width:70px;">Year 2</div>
+    <div style="font-size:0.78em; color:#555;">Main data collection or fieldwork</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#f4f6fa; border-left:4px solid #1d375b; border-radius:4px; padding:0.5em 0.9em;">
+    <div style="font-family:monospace; font-weight:700; color:#1d375b; font-size:0.85em; width:70px;">Year 3</div>
+    <div style="font-size:0.78em; color:#555;">Analysis and drafts, research stays</div>
+  </div>
+
+  <div class="fragment" style="display:flex; align-items:center; background:#fdf0f1; border-left:4px solid #c6273b; border-radius:4px; padding:0.5em 0.9em;">
+    <div style="font-family:monospace; font-weight:700; color:#c6273b; font-size:0.85em; width:70px;">Year 4</div>
+    <div style="font-size:0.78em; color:#555;">Writing, revising, job market</div>
+  </div>
+
+</div>
+```
+
+<div style="height: 16px;"></div>
+
+::: {.fragment}
+::: {.box}
+A vague timeline signals you haven't thought about feasibility. A realistic one is itself a feasibility argument.
+:::
+:::
+
+
+## Putting it together
+
+::: {.fragment}
+Six lenses. This is what we will listen for while you all present.
+:::
+
+```{=html}
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.7em; margin-top:0.8em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">Research question</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">A real puzzle, not a topic wearing a question mark.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">Literature positioning</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Shows what's missing, not just what already exists.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">Methodology</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Justified by the question, not assumed.</div>
+  </div>
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#1d375b; font-size:0.82em; margin-bottom:0.3em;">Feasibility</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Data you can actually get, on a timeline you can defend.</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.82em; margin-bottom:0.3em;">Fit*</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">Specific to institutional strenghts or potential supervisors' work (not generic praise).</div>
+  </div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:0.8em 1em;">
+    <div style="font-weight:700; color:#c6273b; font-size:0.82em; margin-bottom:0.3em;">Timeline*</div>
+    <div style="font-size:0.72em; color:#555; line-height:1.5;">A realistic year-by-year path, not a vague four-year gesture.</div>
+  </div>
+
+</div>
+
+
+<div style="font-size:0.62em; color:#999; margin-top:0.6em;">* May not come up in the 7–9 minute pitch itself, but they still matter for the written proposal.</div>
+```
+
+# Presentations and Feedback {.inverse}
+
+
+## {.inverse .center}
+
+<div style="font-size: 1.8em; font-weight: 700;">Over to you</div>
+
+<div class="fragment" style="font-size: 1.1em; line-height: 1.8; margin-top:0.6em;">
+You've already prepared your proposal and your pitch.<br>
+For the rest of our two sessions, the floor is yours.
+</div>
+
+
+## How the room runs
+
+```{=html}
+<div style="display:flex; align-items:center; gap:0.5em; justify-content:center; margin-top:1.5em;">
+
+  <div class="fragment" style="background:#f4f6fa; border-top:4px solid #1d375b; border-radius:6px; padding:1.4em 1.8em; text-align:center; min-width:260px;">
+    <div style="font-weight:700; color:#1d375b; font-size:1em; margin-bottom:0.3em;">Present</div>
+    <div style="font-family:monospace; font-size:1.3em; color:#c6273b; font-weight:700;">7–9 min</div>
+    <div style="font-size:0.7em; color:#555; margin-top:0.5em;">Hard stop. You will be cut off mid-sentence if needed.</div>
+  </div>
+
+  <div class="fragment" style="font-size:1.5em; color:#c6273b; font-weight:700;">→</div>
+
+  <div class="fragment" style="background:#fdf0f1; border-top:4px solid #c6273b; border-radius:6px; padding:1.4em 1.8em; text-align:center; min-width:260px;">
+    <div style="font-weight:700; color:#c6273b; font-size:1em; margin-bottom:0.3em;">Feedback</div>
+    <div style="font-family:monospace; font-size:1.3em; color:#c6273b; font-weight:700;">11–13 min</div>
+    <div style="font-size:0.7em; color:#555; margin-top:0.5em;">From the room and from me. You listen; you don't defend.</div>
+  </div>
+
+</div>
+```
+
+<div style="height: 30px;"></div>
+
+::: {.fragment}
+::: {.box-red}
+**Presenters**: Seven to nine minutes disappears faster than you think.
+:::
+:::
+
+
+## {.blackout .center}
+
+::: {style="font-size: 1.25em; color: #aaaaaa; line-height: 1.6;"}
+A good proposal is not the one with no questions left to answer.
+:::
+
+::: {.fragment style="font-size: 1.7em; font-weight: 700; color: #639E7D; margin-top: 0.7em;"}
+It is one that makes the reader believe that the question is worth answering.
+:::
