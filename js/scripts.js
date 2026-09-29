@@ -53,4 +53,27 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Index page: expand the mobile "About me" collapse when the nav link is clicked
+    document.querySelectorAll('a[href="#about"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            var aboutContent = document.getElementById('about-content');
+            if (aboutContent && window.innerWidth < 992 && !aboutContent.classList.contains('show')) {
+                $(aboutContent).collapse('show');
+            }
+        });
+    });
+
+    // When the mobile "Show less" toggle collapses the About text, scroll back
+    // to the heading instead of leaving the reader stranded further down the page.
+    $('#about-content').on('hidden.bs.collapse', function () {
+        var target = document.getElementById('about');
+        if (target && window.innerWidth < 992) {
+            $('html, body').animate(
+                { scrollTop: $(target).offset().top - 72 },
+                800,
+                'easeInOutExpo'
+            );
+        }
+    });
 })(jQuery); // End of use strict
