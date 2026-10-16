@@ -1891,13 +1891,18 @@ Source: <a href="https://tylervigen.com/spurious/correlation/1783_associates-deg
 </section>
 <section id="defining-biases-1" class="slide level2">
 <h2>Defining biases</h2>
-<div class="box" style="font-size: 0.86em;">
+<div class="box" style="font-size: 0.74em;">
 <p><span class="math display">\[\begin{aligned}
-\text{Total bias} &amp;= \textcolor{#c6273b}{\text{NATE}} - \textcolor{#1d375b}{\text{ATE}} \\[4pt]
-&amp;= \textcolor{#c6273b}{E[Y_i(1) \mid D_i=1] - E[Y_i(0) \mid D_i=0]} \\
-&amp;\quad - \Big\{\textcolor{#1d375b}{\pi\big(E[Y_i(1) \mid D_i=1] - E[Y_i(0) \mid D_i=1]\big) + (1-\pi)\big(E[Y_i(1) \mid D_i=0] - E[Y_i(0) \mid D_i=0]\big)}\Big\} \\[4pt]
+\text{Total bias} &amp;= \textcolor{#c6273b}{\text{NATE}} - \textcolor{#1d375b}{\text{ATE}} \\[6pt]
+&amp;= \textcolor{#c6273b}{E[Y_i(1) \mid D_i=1] - E[Y_i(0) \mid D_i=0]} - \textcolor{#1d375b}{\big\{\pi \cdot \text{ATT} + (1-\pi) \cdot \text{ATC}\big\}}
+&amp;&amp; \textcolor{#888888}{\text{definitions}} \\[6pt]
+&amp;= \textcolor{#c6273b}{\big(E[Y_i(1) \mid D_i=1] - E[Y_i(0) \mid D_i=1]\big) + \big(E[Y_i(0) \mid D_i=1] - E[Y_i(0) \mid D_i=0]\big)} - \textcolor{#1d375b}{\big\{\cdots\big\}}
+&amp;&amp; \textcolor{#888888}{\pm\, E[Y_i(0) \mid D_i=1]} \\[6pt]
+&amp;= \textcolor{#c6273b}{\text{ATT} + \big(E[Y_i(0) \mid D_i=1] - E[Y_i(0) \mid D_i=0]\big)} - \textcolor{#1d375b}{\big\{\text{ATT} - (1-\pi)(\text{ATT} - \text{ATC})\big\}}
+&amp;&amp; \textcolor{#888888}{\pi = 1 - (1-\pi)} \\[6pt]
 &amp;= \underbrace{\textcolor{#639E7D}{E[Y_i(0) \mid D_i=1] - E[Y_i(0) \mid D_i=0]}}_{\textcolor{#639E7D}{\text{baseline bias} \;=\; 3 - 5.6 \;=\; -2.6}}
 \;+\; \underbrace{\textcolor{#AD9356}{(1-\pi)\big(\text{ATT} - \text{ATC}\big)}}_{\textcolor{#AD9356}{\text{differential treatment effect bias} \;=\; \frac{5}{8}(-1.33) \;=\; -0.83}}
+&amp;&amp; \textcolor{#888888}{\text{ATTs cancel}}
 \end{aligned}\]</span></p>
 </div>
 <div class="r-stack">
