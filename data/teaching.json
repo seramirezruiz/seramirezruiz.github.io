@@ -1,12 +1,21 @@
 {
   "instructor": [
     {
+      "id": "images-audio-video-data",
+      "title": "Images, Audio, and Video as Data for Social Science",
+      "date": "May 2027",
+      "institution": "European University Institute",
+      "location": "Fiesole, Italy",
+      "upcoming": true,
+      "links": {}
+    },
+    {
       "id": "intermediate-quant-methods",
       "title": "Intermediate Quantitative Methods",
       "date": "September 2026",
       "institution": "European University Institute",
       "location": "Fiesole, Italy",
-      "upcoming": true,
+      "upcoming": false,
       "links": {}
     },
     {

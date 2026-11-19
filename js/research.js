@@ -124,7 +124,7 @@
    * Initialize the research page
    */
   function init() {
-    fetch('data/research.json')
+    fetch('data/research.json', { cache: 'no-cache' })
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load research data');

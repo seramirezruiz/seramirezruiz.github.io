@@ -10581,10 +10581,6 @@ header.mast .masthead-heading {
   margin-bottom: 0;
 }
 
-.publication-link { color: #B573F1; }
-
-.teaching-link{color: #a34400;}
-
 .teaching-upcoming {
   font-size: 0.7rem;
   font-weight: 600;
@@ -10598,92 +10594,11 @@ header.mast .masthead-heading {
   letter-spacing: 0.03em;
 }
 
-.publication {
-  margin-top: 1.25rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.publication img {
-  width: 17rem;
-  height: 17rem;
-  border: 0.2rem solid rgba(0, 0, 0, 0.2);
-}
-.publication h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-
-.fa-file-pdf {color: #A265D9;}
-.fa-twitter, .fa-twitter-square { color: #00aced; }
-.fa-facebook-f, .fa-facebook-square { color: #3b5998; }
 .fa-linkedin-in, .fa-linkedin-square { color: #007bb6;}
 .ai-google-scholar { color : #4788ee; }
 .fa-envelope { color : #0061b6;}
-.ai-open-materials { color: #773FA9; }
-.fa-quote-left { color: #9F33FF; }
 section#research {
   background-color: #d8d8d8;
-}
-
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #514e54;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  background-color: #212529;
-  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Research page paper links */
@@ -10712,32 +10627,32 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-top: 2px solid #e2e2e2;
   margin: 0 auto;
 }
-
 .read-more-link {
   display: inline-block;
   margin-top: 0.5rem;
 }
-
 .read-more-link .fa-chevron-down {
   margin-left: 0.35rem;
   font-size: 0.75rem;
   transition: transform 0.2s ease;
 }
-
 .read-more-link[aria-expanded="true"] .fa-chevron-down {
   transform: rotate(180deg);
 }
-
 .read-more-link-top[aria-expanded="true"] {
   display: none;
 }
-
 @media (max-width: 991.98px) {
   .about-body {
-    text-align: center;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.7;
   }
 }
-
 .about-heading {
   position: absolute;
   width: 1px;
@@ -10749,7 +10664,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   white-space: nowrap;
   border: 0;
 }
-
 @media (min-width: 992px) {
   #about-content.collapse:not(.show) {
     display: block;
@@ -10768,4 +10682,25 @@ section#contact form#contactForm :-ms-input-placeholder {
     white-space: normal;
     text-align: center;
   }
+}
+
+/* CV page download button */
+.cv-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid #cc0055;
+  border-radius: 4px;
+  color: #cc0055;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cv-download:hover,
+.cv-download:focus {
+  background-color: #cc0055;
+  color: #fff;
+  text-decoration: none;
+}
+.cv-download i {
+  margin-right: 0.4rem;
 }
