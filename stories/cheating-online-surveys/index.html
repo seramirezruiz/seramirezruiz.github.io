@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who’s cheating on your survey? What browsing data reveal about “googling” the answers</title>
+  <meta name="description" content="Online surveys can’t stop people from looking up the answers to knowledge questions. By linking a survey to its respondents’ browsing data, collected with their consent, we caught it happening, question by question. Here is how common it is, who does it, and whether it changes what we learn.">
+  <meta name="author" content="Sebastian Ramirez-Ruiz">
+  <link rel="canonical" href="https://seramirezruiz.github.io/stories/cheating-online-surveys/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Who’s cheating on your survey? What browsing data reveal about “googling” the answers">
+  <meta property="og:description" content="Online surveys can’t stop people from looking up the answers to knowledge questions. By linking a survey to its respondents’ browsing data, collected with their consent, we caught it happening, question by question. Here is how common it is, who does it, and whether it changes what we learn.">
+  <meta property="og:url" content="https://seramirezruiz.github.io/stories/cheating-online-surveys/">
+  <meta property="og:image" content="https://seramirezruiz.github.io/stories/cheating-online-surveys/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://seramirezruiz.github.io/stories/cheating-online-surveys/assets/og.png">
+  <meta name="twitter:title" content="Who’s cheating on your survey? What browsing data reveal about “googling” the answers">
+  <meta name="twitter:description" content="Online surveys can’t stop people from looking up the answers to knowledge questions. By linking a survey to its respondents’ browsing data, collected with their consent, we caught it happening, question by question. Here is how common it is, who does it, and whether it changes what we learn.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="og-state" content="types">
+  <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+  <script>document.documentElement.className = "js";</script>
+  <link rel="preload" as="font" type="font/woff2" href="../../stories/engine/fonts/raleway-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="../../stories/engine/fonts/montserrat-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="../../stories/engine/site-nav.css">
+  <link rel="stylesheet" href="../../stories/engine/story.css">
+  <link rel="stylesheet" href="charts/story.css">
+
+  <link rel="modulepreload" href="../../stories/engine/vendor/d3.js">
+  <link rel="modulepreload" href="../../stories/engine/story.js">
+  <link rel="modulepreload" href="../../stories/engine/nav.js">
+  <link rel="modulepreload" href="../../stories/engine/scrolly.js">
+  <link rel="modulepreload" href="../../stories/engine/charts/marks.js">
+  <link rel="modulepreload" href="../../stories/engine/charts/tooltip.js">
+  <link rel="modulepreload" href="../../stories/engine/charts/beeswarm.js">
+  <link rel="modulepreload" href="../../stories/engine/charts/axes.js">
+  <link rel="modulepreload" href="charts/graphic.js">
+  <link rel="modulepreload" href="charts/main.js">
+</head>
+<body>
+<a class="skip-link" href="#story">Skip to the story</a>
+<nav id="mainNav" aria-label="Site"><div class="container"><a class="navbar-brand text-primary" href="../../index.html#page-top">| SRR |</a><button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false">Menu <svg class="nav-bars ml-1" aria-hidden="true" focusable="false" viewBox="0 0 448 512" width="0.875em" height="1em" style="vertical-align:-.125em"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link text-primary" href="../../index.html#about">About me</a></li><li class="nav-item"><a class="nav-link text-primary" href="../../research.html">Research</a></li><li class="nav-item"><a class="nav-link text-primary" href="../../stories/" aria-current="page">Stories</a></li><li class="nav-item"><a class="nav-link text-primary" href="../../teaching.html">Teaching</a></li><li class="nav-item"><a class="nav-link text-primary" href="../../cv.html">CV</a></li></ul></div></div></nav>
+<main id="story">
+  <header class="story-hero">
+    <p class="story-hero__kicker"><a href="../">Research Stories</a></p>
+    <h1>Who’s cheating on your survey? What browsing data reveal about “googling” the answers</h1>
+    <p class="story-hero__dek">Online surveys can’t stop people from looking up the answers to knowledge questions. By linking a survey to its respondents’ browsing data, collected with their consent, we caught it happening, question by question. Here is how common it is, who does it, and whether it changes what we learn.</p>
+    <p class="story-hero__byline">By Sebastian Ramirez-Ruiz, based on research with Simon Munzert, Pablo Barberá, Andrew M. Guess, and JungHwan Yang (co-authors).</p>
+
+  </header>
+  <figure class="story-figure story-figure--html">
+    <div class="story-figure__art" role="img" aria-label="Illustration: a survey question asks, “By whom is the chancellor of the Federal Republic of Germany elected?” Next to it, a new browser tab with the search “wer wählt den bundeskanzler” (“who elects the chancellor”).">
+      <div class="ch-hero">
+        <div class="ch-q">
+          <p class="ch-q__kicker">Online survey · wave 2</p>
+          <p class="ch-q__text">By whom is the chancellor of the Federal Republic of Germany elected?</p>
+          <ul class="ch-q__opts">
+            <li>Federal Council (Bundesrat)</li>
+            <li>Federal Convention (Bundesversammlung)</li>
+            <li>Federal Parliament (Bundestag)</li>
+            <li>Cabinet of Germany</li>
+            <li>Don’t know</li>
+          </ul>
+        </div>
+        <div class="ch-b">
+          <div class="ch-b__tabs"><span class="ch-b__tab">Survey</span><span class="ch-b__tab is-on">New tab</span></div>
+          <div class="ch-b__search">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span lang="de">wer wählt den bundeskanzler</span><span class="ch-b__caret"></span>
+          </div>
+          <p class="ch-b__tr">“who elects the chancellor”</p>
+        </div>
+      </div>
+    </div>
+    <figcaption><span class="story-figure__tag">Illustration</span> The question is real (wave 2), and so is the search: one of dozens logged while people were taking the survey.</figcaption>
+  </figure>
+  <p class="story-hero__scroll" aria-hidden="true">Scroll to read ↓</p>
+  <div class="scrolly" data-scrolly>
+    <div class="scrolly__graphic">
+      <div class="g-caption" aria-hidden="true"><p class="g-caption__title"></p><p class="g-caption__note"></p></div>
+      <div class="g-stage">
+        <svg class="g-svg" aria-hidden="true" focusable="false"></svg>
+        <div class="g-html" role="region" aria-label="Interactive illustration"></div>
+      </div>
+    </div>
+    <div class="scrolly__steps">
+      <section class="step" id="hook" data-state="log">
+        <div class="step__card">
+          <p>In the summer of <span class="num" data-key="sample.period">2017</span>, ahead of Germany’s federal election, an online survey asked: <em>“By whom is the chancellor of the Federal Republic of Germany elected?”</em></p>
+          <p>No interviewer was watching. So <span class="num" data-key="items.max">12%</span> of the people who answered it opened another tab and asked a search engine. Most typed something like <em>wer wählt den bundeskanzler</em> (“who elects the chancellor”). Some pasted the whole question into the search box.</p>
+          <p>We know this because their browsers were logging every page they visited, with their consent.</p>
+          <p class="sr-only">Graphic: Illustration, not data. One survey session as the tracker logged it: survey starts, facebook.com, mail.google.com, a Google search for “wer wählt den bundeskanzler”, a news article about the FDP, amazon.de, survey ends.</p>
+          <img class="fallback" src="assets/fallback/hook.png" alt="" width="960" height="962" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="the-problem" data-state="log">
+        <div class="step__card">
+          <p>Online surveys are cheap and fast, and social scientists rely on them more and more. But without an interviewer in the room, people can “google” the answers to knowledge questions. That can make the public look better informed than it is, and it can distort what we learn about who knows what about politics.</p>
+          <p>Earlier studies measured this indirectly: by asking people afterward whether they looked anything up, by adding obscure “catch” questions that almost nobody can answer without searching, or by logging when people switch browser windows. Depending on the method and the sample, they found cheating rates anywhere from <span class="num" data-key="lit.min">3%</span> to <span class="num" data-key="lit.max">72%</span>.</p>
+          <p class="sr-only">Graphic: The same illustrated survey session.</p>
+          <img class="fallback" src="assets/fallback/the-problem.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="the-method" data-state="log-flag">
+        <div class="step__card">
+          <p>We took a more direct route. Our respondents came from YouGov’s Pulse panel in Germany. Its members agree to install software that records the web pages they visit on their laptops, desktops, and phones.</p>
+          <p>That let us line up two records for each person: when they started and finished the survey, and every page they opened in between. We searched those pages for keywords tied to each question (“Merkel” and “Partei,” say), checked every hit by hand, and then screened all visits to the sites those checks turned up.</p>
+          <p class="sr-only">Graphic: Illustration, not data. In the same survey session, two keywords are flagged: “bundeskanzler” in the Google search, which a check by hand confirms as a lookup, and “FDP” in a news article, which the check rules out.</p>
+          <img class="fallback" src="assets/fallback/the-method.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="the-sample" data-state="grid">
+        <div class="step__card">
+          <p>Each dot is one of the respondents whose survey sessions we could find in the browsing data.</p>
+          <p>Over several survey waves, they answered commonly used political knowledge questions of four kinds: <strong>factual</strong> questions about the rules of the electoral system, <strong>visual elite</strong> questions (the party of politicians shown in photos), <strong>verbal elite</strong> questions (the names of the parties’ top candidates, typed into a box), and <strong>event</strong> questions (which recent news stories had really happened).</p>
+          <p class="sr-only">Graphic: 685 grey dots in a grid, one per respondent.</p>
+          <img class="fallback" src="assets/fallback/the-sample.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="prevalence" data-state="grid-lit">
+        <div class="step__card">
+          <p><strong><span class="num" data-key="prev.any">23%</span></strong> of them looked up the answer to at least one question.</p>
+          <p class="sr-only">Graphic: The same grid of 685 dots. 160 of them, 23%, are highlighted: people who looked up at least one answer.</p>
+          <img class="fallback" src="assets/fallback/prevalence.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="serial" data-state="histogram">
+        <div class="step__card">
+          <p>But serial cheaters are rare. Most of those who looked something up did it once or twice: the typical cheater looked up <span class="num" data-key="prev.median_k">two</span> answers. <span class="num" data-key="prev.under_quarter">92%</span> of them looked up fewer than a quarter of the questions they saw.</p>
+          <p class="sr-only">Graphic: The highlighted dots regroup into columns by how many answers each person looked up. Most stack up at one or two lookups; a thin tail stretches to the right.</p>
+          <img class="fallback" src="assets/fallback/serial.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="other-tabs" data-state="tabs">
+        <div class="step__card">
+          <p>Having another tab open is not the same as cheating. <span class="num" data-key="browse.any">66%</span> of respondents visited some other website while taking the survey. Only <span class="num" data-key="browse.validated">35%</span> of those were looking up answers. The rest went largely to search engines, video sites, social media, email, and online shops.</p>
+          <p>That matters for methods that treat switching windows as cheating. They may flag many “innocent” people.</p>
+          <p class="sr-only">Graphic: Two bars. 66% of respondents visited another website while taking the survey. 23% looked up an answer, about a third of those who browsed.</p>
+          <img class="fallback" src="assets/fallback/other-tabs.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="items" data-state="items">
+        <div class="step__card">
+          <p>Now each dot is one of the <span class="num" data-key="sample.items">68</span> items, placed by the share of answers to it that were looked up. Most sit close to zero. A few stand far out.</p>
+          <p class="sr-only">Graphic: The dots rearrange into 68 dots along a horizontal scale from 0% to 13%, one per item, placed by the share of answers that were looked up. Most sit below 3%; a handful lie far to the right.</p>
+          <img class="fallback" src="assets/fallback/items.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="types" data-state="types">
+        <div class="step__card">
+          <p>Sorting them by type shows the pattern. When people had to <em>type</em> a candidate’s name into a box, they looked up <span class="num" data-key="items.verbal">8%</span> of answers on average. Questions about election rules came next (<span class="num" data-key="items.factual">6%</span>), then matching photos of politicians to their parties (<span class="num" data-key="items.visual">3%</span>), which is harder to search for. Recent events were looked up least (<span class="num" data-key="items.event">1%</span>).</p>
+          <p>The single most googled item was the one about who elects the chancellor: <span class="num" data-key="items.max">12%</span> of answers in the second wave. (It’s the Bundestag.)</p>
+          <p class="sr-only">Graphic: The same 68 dots split into four rows by question type. Candidate names (average 8%) and election rules (6%) sit furthest right, politician photos (3%) in the middle, and recent events (1%) near zero. The top dot, who elects the chancellor in wave 2, is labeled at 12%.</p>
+          <img class="fallback" src="assets/fallback/types.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="pledge" data-state="us">
+        <div class="step__card">
+          <p>In a companion survey in the United States, the picture looked very different. Of the <span class="num" data-key="us.n">409</span> respondents whose browsing we could check reliably, only <span class="num" data-key="us.cheaters">four</span> looked anything up, <span class="num" data-key="us.instances">six</span> times in total, all on questions about recent events. That is <span class="num" data-key="us.share">fewer than 1%</span> of respondents. Just <span class="num" data-key="us.browse">35</span> of them visited other websites during the survey at all.</p>
+          <p>One difference: right before the knowledge questions, the US survey asked people to promise not to look anything up. <em>“Will you answer the following questions without help from outside sources?”</em></p>
+          <p>We can’t say the pledge caused the difference. It wasn’t randomly assigned, and the people and the questions differed too. But the pattern fits earlier experiments that found pledges reduce cheating, although those found smaller effects. A later study that did randomize a pledge, by Matthew Graham, put it plainly: “Deterrence works: a pledge not to cheat reduces search by half.”</p>
+          <p>Asking people afterward is no substitute. None of the four admitted to looking anything up. <span class="num" data-key="us.selfreport">Eight</span> others said they had, but we found no searches on the knowledge questions for any of them.</p>
+          <p class="sr-only">Graphic: A new grid of 409 dots, one per US respondent. Only four are highlighted.</p>
+          <img class="fallback" src="assets/fallback/pledge.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="who" data-state="predictors">
+        <div class="step__card">
+          <p>Who looks things up? We modeled every single answer, taking both the person and the question into account.</p>
+          <p>People with more formal education were more likely to cheat, and so were people who <em>feel</em> well informed about politics. But people who <em>actually</em> know more about politics were less likely to cheat.</p>
+          <p>Spending lots of time on survey websites made no difference, and neither did how hard a question was.</p>
+          <p class="sr-only">Graphic: A chart of estimates with intervals. Right of zero means more likely to cheat. High education and feeling well informed sit to the right; actual knowledge sits clearly to the left. Gender and age lean right but their intervals cross zero. Habitual survey-taking and item difficulty sit on zero.</p>
+          <img class="fallback" src="assets/fallback/who.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="timing" data-state="times">
+        <div class="step__card">
+          <p>Could researchers spot cheating without tracking data? A common shortcut is response time: someone who looks up an answer should take longer. In our data they did. The typical question took <span class="num" data-key="timing.honest">34 seconds</span> when people answered on their own and <span class="num" data-key="timing.cheated">99 seconds</span> when they looked something up.</p>
+          <p>Yet a model that combines response times with what surveys usually know about respondents and questions still did poorly. It caught only <span class="num" data-key="timing.f1">60%</span> of real lookups, and only <span class="num" data-key="timing.f1">60%</span> of the answers it flagged were real lookups. Because cheating is rare, relying on response times could miss many lookups and flag even more honest answers.</p>
+          <p class="sr-only">Graphic: Two distributions of response times on a log scale. Answers that were looked up (median 99 seconds) sit clearly to the right of honest answers (median 34 seconds), but the two overlap a lot.</p>
+          <img class="fallback" src="assets/fallback/timing.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="distort" data-state="ztests">
+        <div class="step__card">
+          <p>So does cheating change what we learn about political knowledge? We ran <span class="num" data-key="distort.models">31</span> versions of a standard model of who knows more about politics, one for every combination of gender, age, education, political interest, and efficacy. We ran each twice, once with the raw knowledge scores and once with lookups counted as wrong, for six different knowledge measures.</p>
+          <p>Each dot is one coefficient compared across the two versions: <span class="num" data-key="distort.tests">480</span> in all. A dot outside the band (a z-score beyond ±<span class="num" data-key="distort.z">1.96</span>) would mean that correcting for cheating changed the result by more than chance would explain. None do.</p>
+          <p>Knowledge also predicted political interest, certainty about one’s vote, efficacy, and the likelihood of voting about equally well among cheaters and non-cheaters. In most cases the differences were minor, and none was statistically significant.</p>
+          <p class="sr-only">Graphic: 480 dots in a narrow swarm around zero, all inside a shaded band from −1.96 to 1.96. None fall outside it.</p>
+          <img class="fallback" src="assets/fallback/distort.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+      <section class="step" id="what-to-do" data-state="types-end">
+        <div class="step__card">
+          <p>Cheating happens, but it doesn’t seem to distort the big picture. Still, most researchers don’t have tracking data to catch it after the fact. So the best defense comes before: ask respondents to commit to not looking things up, and use questions that are hard to google, like matching photos of politicians to their parties.</p>
+          <p>Online surveys come with trade-offs. Valid knowledge measures don’t have to be one of them.</p>
+          <p class="sr-only">Graphic: Back to the 68 items in four rows by type. The politician-photo row is emphasized.</p>
+          <img class="fallback" src="assets/fallback/what-to-do.png" alt="" width="960" height="960" loading="lazy" decoding="async">
+        </div>
+      </section>
+    </div>
+  </div>
+  <article class="story-after">
+<h2 id="methods">How we made this</h2>
+
+<p>The German data come from five survey waves fielded by YouGov in <span class="num" data-key="sample.period">2017</span>, linked to the browsing data of panel members who had agreed to passive tracking. Four waves included knowledge questions. We kept respondents whose survey sessions appear in the browsing data. To flag lookups, we searched the pages visited during each survey session for question-specific keywords, checked every hit by hand, and then screened all visits to the sites those checks turned up. All keywords and every validated lookup are listed in the paper’s online appendix.</p>
+<p>There are limits. We can’t see devices that weren’t tracked, or offline sources such as asking someone in the room. We also have to assume that a search during the survey was a lookup, not someone checking an answer they had already given.</p>
+<h2 id="references">Newer study mentioned</h2>
+<ul class="references">
+  <li>Graham, M. H. (2024). Detecting and deterring information search in online surveys. American Journal of Political Science, 68(4), 1315–1334. https://doi.org/10.1111/ajps.12786</li>
+</ul>
+<details class="data-table" id="data">
+  <summary>See all 68 items in a table</summary>
+  <p>Share of answers that respondents looked up, by item. German panel, waves 2 to 5, 2017.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col" class="num">Wave</th><th scope="col" class="num">Answers</th><th scope="col" class="num">Looked up</th><th scope="col" class="num">Share (%)</th></tr></thead>
+    <tbody>
+      <tr><td>Dobrindt calls for the end of diesel cars by 2030</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">17</td><td class="num">3.1</td></tr>
+      <tr><td>Gauland sentenced for sedition</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">15</td><td class="num">2.7</td></tr>
+      <tr><td>Trump appoints a general as chief of staff</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">14</td><td class="num">2.6</td></tr>
+      <tr><td>Schulz calls for a universal basic income</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">13</td><td class="num">2.4</td></tr>
+      <tr><td>Morales referendum sparks mass protests</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">12</td><td class="num">2.2</td></tr>
+      <tr><td>UN Security Council toughens sanctions on North Korea</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">12</td><td class="num">2.2</td></tr>
+      <tr><td>US Senate abolishes Obamacare</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">11</td><td class="num">2.0</td></tr>
+      <tr><td>Knife attack in a Hamburg supermarket</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">11</td><td class="num">2.0</td></tr>
+      <tr><td>Carmakers commit to free diesel hardware updates</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">10</td><td class="num">1.8</td></tr>
+      <tr><td>Green MP Twesten leaves her group in Lower Saxony</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">9</td><td class="num">1.7</td></tr>
+      <tr><td>Unemployment falls below 4% in August</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">9</td><td class="num">1.6</td></tr>
+      <tr><td>Berlin votes against keeping Tegel Airport</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">7</td><td class="num">1.3</td></tr>
+      <tr><td>Greens rule out a Jamaica coalition</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">7</td><td class="num">1.3</td></tr>
+      <tr><td>Ryanair to take over Air Berlin</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">7</td><td class="num">1.3</td></tr>
+      <tr><td>Etihad bids for Air Berlin</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">6</td><td class="num">1.1</td></tr>
+      <tr><td>Merkel asks carmakers for free hardware updates</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">6</td><td class="num">1.1</td></tr>
+      <tr><td>Russia and China veto a North Korea resolution</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>Parties want a five-year Bundestag term</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>Schulz asks Merkel for another TV debate</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>Volkswagen to end combustion cars by 2040</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>Weidel reportedly employed an asylum seeker off the books</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>AfD deputy Arppe resigns</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>Schulz presents an education reform</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">5</td><td class="num">0.9</td></tr>
+      <tr><td>FDP comes third in the federal election</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">4</td><td class="num">0.8</td></tr>
+      <tr><td>Russian hackers accessed voting software</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">4</td><td class="num">0.8</td></tr>
+      <tr><td>Gauland open to a coalition with the Union and FDP</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">4</td><td class="num">0.8</td></tr>
+      <tr><td>Bomb explodes on the London Underground</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">4</td><td class="num">0.7</td></tr>
+      <tr><td>Juncker calls for the euro in every EU country</td><td>Recent events</td><td class="num">4</td><td class="num">553</td><td class="num">4</td><td class="num">0.7</td></tr>
+      <tr><td>Hurricane floods southern Texas</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">4</td><td class="num">0.7</td></tr>
+      <tr><td>North Korea announces a hydrogen bomb test</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">4</td><td class="num">0.7</td></tr>
+      <tr><td>Merkel names the Greens as her preferred partner</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">4</td><td class="num">0.7</td></tr>
+      <tr><td>Bavaria reports a 30% drop in reported rapes</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">3</td><td class="num">0.6</td></tr>
+      <tr><td>Rohingya flee military violence in Myanmar</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">3</td><td class="num">0.6</td></tr>
+      <tr><td>Threatening letters sent to top politicians</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">3</td><td class="num">0.6</td></tr>
+      <tr><td>Alleged rape near a refugee shelter in Upper Bavaria</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">3</td><td class="num">0.6</td></tr>
+      <tr><td>Two Germans arrested in Turkey</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">3</td><td class="num">0.5</td></tr>
+      <tr><td>Earthquake in Mexico kills more than 200</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">2</td><td class="num">0.4</td></tr>
+      <tr><td>Supermarkets pull eggs over fipronil</td><td>Recent events</td><td class="num">2</td><td class="num">545</td><td class="num">2</td><td class="num">0.4</td></tr>
+      <tr><td>EU to co-fund Hungary’s border fence</td><td>Recent events</td><td class="num">3</td><td class="num">557</td><td class="num">2</td><td class="num">0.4</td></tr>
+      <tr><td>Trump to rethink the Iran nuclear deal</td><td>Recent events</td><td class="num">5</td><td class="num">519</td><td class="num">1</td><td class="num">0.2</td></tr>
+      <tr><td>Who elects the chancellor?</td><td>Election rules</td><td class="num">2</td><td class="num">545</td><td class="num">67</td><td class="num">12.3</td></tr>
+      <tr><td>Who elects the chancellor?</td><td>Election rules</td><td class="num">5</td><td class="num">519</td><td class="num">40</td><td class="num">7.7</td></tr>
+      <tr><td>Which vote decides the parties’ strength?</td><td>Election rules</td><td class="num">2</td><td class="num">545</td><td class="num">19</td><td class="num">3.5</td></tr>
+      <tr><td>Which vote decides the parties’ strength?</td><td>Election rules</td><td class="num">5</td><td class="num">519</td><td class="num">7</td><td class="num">1.3</td></tr>
+      <tr><td>Top candidate(s): Greens</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">56</td><td class="num">10.1</td></tr>
+      <tr><td>Top candidate(s): Left Party</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">52</td><td class="num">9.4</td></tr>
+      <tr><td>Top candidate(s): AfD</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">47</td><td class="num">8.5</td></tr>
+      <tr><td>Top candidate(s): FDP</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">47</td><td class="num">8.5</td></tr>
+      <tr><td>Top candidate(s): SPD</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">31</td><td class="num">5.6</td></tr>
+      <tr><td>Top candidate(s): CDU/CSU</td><td>Candidate names</td><td class="num">4</td><td class="num">553</td><td class="num">30</td><td class="num">5.4</td></tr>
+      <tr><td>Party of Heiko Maas (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">18</td><td class="num">3.3</td></tr>
+      <tr><td>Party of Angela Merkel (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">18</td><td class="num">3.3</td></tr>
+      <tr><td>Party of Peter Altmaier (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">17</td><td class="num">3.1</td></tr>
+      <tr><td>Party of Katrin Göring-Eckardt (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">17</td><td class="num">3.1</td></tr>
+      <tr><td>Party of Peter Altmaier (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">16</td><td class="num">3.1</td></tr>
+      <tr><td>Party of Heiko Maas (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">16</td><td class="num">3.1</td></tr>
+      <tr><td>Party of Alice Weidel (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">16</td><td class="num">2.9</td></tr>
+      <tr><td>Party of Martin Schulz (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">15</td><td class="num">2.8</td></tr>
+      <tr><td>Party of Dietmar Bartsch (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">14</td><td class="num">2.6</td></tr>
+      <tr><td>Party of Anton Hofreiter (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">14</td><td class="num">2.6</td></tr>
+      <tr><td>Party of Christian Lindner (photo)</td><td>Politician photos</td><td class="num">2</td><td class="num">545</td><td class="num">14</td><td class="num">2.6</td></tr>
+      <tr><td>Party of Dietmar Bartsch (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">11</td><td class="num">2.1</td></tr>
+      <tr><td>Party of Katrin Göring-Eckardt (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">11</td><td class="num">2.1</td></tr>
+      <tr><td>Party of Anton Hofreiter (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">11</td><td class="num">2.1</td></tr>
+      <tr><td>Party of Christian Lindner (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">11</td><td class="num">2.1</td></tr>
+      <tr><td>Party of Angela Merkel (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">10</td><td class="num">1.9</td></tr>
+      <tr><td>Party of Martin Schulz (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">10</td><td class="num">1.9</td></tr>
+      <tr><td>Party of Alice Weidel (photo)</td><td>Politician photos</td><td class="num">5</td><td class="num">519</td><td class="num">10</td><td class="num">1.9</td></tr>
+    </tbody>
+  </table></div>
+</details>
+<h2 id="paper">The paper</h2>
+<div class="paper-box">
+  <p>Simon Munzert, Sebastian Ramirez-Ruiz, Pablo Barberá, Andrew M. Guess, and JungHwan Yang (2024). “Who’s cheating on your survey? A detection approach with digital trace data.” <em>Political Science Research and Methods</em> 12(2), 390–398. DOI: <a href="https://doi.org/10.1017/psrm.2022.42">10.1017/psrm.2022.42</a></p>
+  <ul><li><a href="https://doi.org/10.1017/psrm.2022.42">Read the paper (DOI)</a></li><li><a href="https://osf.io/sw6f3">Free preprint</a></li><li><a href="https://doi.org/10.7910/DVN/WGWUK2">Replication materials</a></li><li><a href="https://bsky.app/profile/seramirezruiz.bsky.social/post/3lboop26hkt2p">Thread</a></li></ul>
+</div>
+
+    <p class="story-back"><a href="../">← More Research Stories</a></p>
+  </article>
+</main>
+<script type="module" src="charts/main.js"></script>
+<noscript><style>.story-hero__scroll{display:none}</style></noscript>
+</body>
+</html>

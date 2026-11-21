@@ -1,162 +1,71 @@
-/**
- * Research page renderer
- * Loads paper data from JSON and renders to the page
+/*
+ * Research page renderer: turns data/research.json into the paper lists.
+ *
+ * It runs at BUILD time (stories/_build/pages.mjs loads it, the same way it
+ * loads js/site-nav.js), so research.html ships with every paper already in the
+ * HTML: it works without JavaScript and nothing jumps while loading.
+ *
+ * To add or change a paper: edit data/research.json, then run `npm run build`
+ * in stories/_build. Don't edit research.html by hand.
+ *
+ * Fields are rendered as they are in the data. `authors`, `title`, and
+ * `abstract` may contain simple HTML (e.g. <i>…</i> marks your own name).
  */
+(function (root) {
+  "use strict";
 
-(function() {
-  'use strict';
+  // Text links under each paper, in this order. Everything but the story opens in a new tab.
+  var LINKS = [
+    { key: "paper", label: "Paper" },
+    { key: "ungated", label: "Ungated" },
+    { key: "preprint", label: "Preprint" },
+    { key: "materials", label: "Materials" },
+    { key: "thread", label: "Thread" }
+  ];
 
-  /**
-   * Generate HTML for paper links (thread, preprint, paper, materials, ungated)
-   */
-  function renderLinks(links, paperId) {
-    if (!links || Object.keys(links).length === 0) {
-      return '';
-    }
+  function attr(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  }
 
-    const linkConfigs = [
-      { key: 'thread', icon: 'fa fa-cloud', iconColor: '#87CEEB', label: 'Thread' },
-      { key: 'paper', icon: 'ai ai-open-access', iconColor: null, label: 'Paper' },
-      { key: 'ungated', emoji: '🔓', label: 'Ungated' },
-      { key: 'preprint', icon: 'ai ai-osf', iconColor: null, label: 'Preprint' },
-      { key: 'materials', icon: 'ai ai-open-data', iconColor: '#696969', label: 'Materials' }
-    ];
-
-    const parts = [];
-
-    linkConfigs.forEach(config => {
-      if (links[config.key]) {
-        let iconHtml;
-        if (config.emoji) {
-          iconHtml = config.emoji;
-        } else {
-          const iconStyle = config.iconColor ? ` style="color:${config.iconColor}"` : '';
-          iconHtml = `<i class="${config.icon}"${iconStyle}></i>`;
-        }
-        parts.push(
-          `<span class="paper-link">${iconHtml} ` +
-          `<a href="${links[config.key]}" target="_blank">${config.label}</a></span>`
-        );
-      }
+  function renderLinks(paper) {
+    var l = paper.links || {};
+    var parts = [];
+    if (l.story) parts.push('<a class="story-mark" href="' + attr(l.story) + '">Story</a>');
+    LINKS.forEach(function (c) {
+      if (l[c.key]) parts.push('<a href="' + attr(l[c.key]) + '" target="_blank" rel="noopener">' + c.label + "</a>");
     });
-
-    return parts.join('<span class="paper-link-sep">|</span>');
-  }
-
-  /**
-   * Generate HTML for abstract toggle and content
-   */
-  function renderAbstract(abstract, paperId, hasLinksBefore) {
-    if (!abstract) {
-      return '';
+    if (paper.abstract) {
+      parts.push('<details class="abs"><summary>Abstract</summary><p>' + paper.abstract + "</p></details>");
     }
-
-    const separator = hasLinksBefore ? '<span class="paper-link-sep">|</span>' : '';
-
-    return `
-      ${separator}
-      <span class="paper-link">
-        <i class="far fa-file-alt" style="color:#696969"></i>
-        <a data-toggle="collapse" href="#abstract-${paperId}" role="button" aria-expanded="false" aria-controls="abstract-${paperId}">Abstract ↓</a>
-      </span>
-      <div class="collapse" id="abstract-${paperId}">
-        <div class="card card-body">${abstract}</div>
-      </div>`;
+    return parts.length ? '\n        <div class="entry__links">' + parts.join("") + "</div>" : "";
   }
 
-  /**
-   * Render a journal publication
-   */
-  function renderJournalPaper(paper, index, array) {
-    let citation = paper.authors;
-    if (paper.year) {
-      citation += `, ${paper.year}.`;
-    } else {
-      citation += ',';
-    }
-    citation += ` <b>${paper.title}</b>`;
-
-    if (paper.journal) {
-      citation += `. <i>${paper.journal}</i>`;
-      if (paper.journalInfo) {
-        citation += ` (${paper.journalInfo})`;
-      }
-    }
-
-    const linksHtml = renderLinks(paper.links, paper.id);
-    const abstractHtml = renderAbstract(paper.abstract, paper.id, linksHtml.length > 0);
-    const isLast = index === array.length - 1;
-
-    return `
-      <li>
-        ${citation}
-        <br>
-        <span class="paper-links">
-          ${linksHtml}${abstractHtml}
-        </span>
-      </li>
-      ${isLast ? '' : '<hr>'}`;
+  function renderJournalPaper(p) {
+    var journal = p.journal ? " <i>" + p.journal + "</i>" + (p.journalInfo ? " " + p.journalInfo : "") : "";
+    return '      <li class="entry" id="' + attr(p.id) + '">\n' +
+      '        <h3 class="entry__title">' + p.title + "</h3>\n" +
+      '        <p class="entry__meta"><span class="authors">' + p.authors + "</span>" +
+      (p.year ? " (" + p.year + ")." : ".") + journal + "</p>" +
+      renderLinks(p) + "\n      </li>";
   }
 
-  /**
-   * Render a working paper
-   */
-  function renderWorkingPaper(paper, index, array) {
-    let title = paper.title;
-    if (paper.coauthors) {
-      title += ` (${paper.coauthors})`;
-    }
-
-    const linksHtml = renderLinks(paper.links, paper.id);
-    const abstractHtml = renderAbstract(paper.abstract, paper.id, linksHtml.length > 0);
-    const hasLinks = linksHtml || abstractHtml;
-    const isLast = index === array.length - 1;
-
-    return `
-      <li>
-        ${title}
-        ${hasLinks ? `<br><span class="paper-links">${linksHtml}${abstractHtml}</span>` : ''}
-      </li>
-      ${isLast ? '' : '<hr>'}`;
+  function renderWorkingPaper(p) {
+    var co = p.coauthors ? p.coauthors.charAt(0).toUpperCase() + p.coauthors.slice(1) : "";
+    return '      <li class="entry" id="' + attr(p.id) + '">\n' +
+      '        <h3 class="entry__title">' + p.title + "</h3>" +
+      (co ? '\n        <p class="entry__meta">' + co + "</p>" : "") +
+      renderLinks(p) + "\n      </li>";
   }
 
-  /**
-   * Initialize the research page
-   */
-  function init() {
-    fetch('data/research.json', { cache: 'no-cache' })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to load research data');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Render journal publications
-        const journalContainer = document.getElementById('journal-publications-list');
-        if (journalContainer && data.journalPublications) {
-          journalContainer.innerHTML = data.journalPublications
-            .map(renderJournalPaper)
-            .join('');
-        }
-
-        // Render working papers
-        const workingContainer = document.getElementById('working-papers-list');
-        if (workingContainer && data.workingPapers) {
-          workingContainer.innerHTML = data.workingPapers
-            .map(renderWorkingPaper)
-            .join('');
-        }
-      })
-      .catch(error => {
-        console.error('Error loading research data:', error);
-      });
+  /** @returns {{ publications: string, working: string }} the <li> lists */
+  function render(data) {
+    return {
+      publications: (data.journalPublications || []).map(renderJournalPaper).join("\n"),
+      working: (data.workingPapers || []).map(renderWorkingPaper).join("\n")
+    };
   }
 
-  // Run when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
+  var Research = { render: render };
+  if (typeof module !== "undefined" && module.exports) module.exports = Research;
+  root.Research = Research;
+})(typeof window !== "undefined" ? window : globalThis);

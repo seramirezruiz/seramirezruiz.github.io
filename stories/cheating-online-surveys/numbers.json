@@ -1,0 +1,187 @@
+{
+  "values": {
+    "sample.n": {
+      "value": 685,
+      "display": "685",
+      "rerun": 685
+    },
+    "sample.waves": {
+      "value": 4,
+      "display": "four"
+    },
+    "sample.questions": {
+      "value": 8,
+      "display": "eight"
+    },
+    "sample.items": {
+      "value": 68,
+      "display": "68",
+      "rerun": 68
+    },
+    "sample.period": {
+      "value": 2017,
+      "display": "2017"
+    },
+    "sample.election": {
+      "value": "2017-09-24",
+      "display": "September 24, 2017"
+    },
+    "sample.grid_names": {
+      "value": 9,
+      "display": "nine"
+    },
+    "sample.parties": {
+      "value": 6,
+      "display": "six"
+    },
+    "sample.events": {
+      "value": 10,
+      "display": "ten"
+    },
+    "prev.any": {
+      "value": 23,
+      "display": "23%",
+      "rerun": 23.36
+    },
+    "prev.none": {
+      "value": 77,
+      "display": "77%",
+      "rerun": 76.64
+    },
+    "prev.cheaters": {
+      "value": 160,
+      "display": "160",
+      "rerun": 160
+    },
+    "prev.under_quarter": {
+      "value": 92,
+      "display": "92%",
+      "rerun": 91.88
+    },
+    "prev.median_k": {
+      "value": 2,
+      "display": "two",
+      "rerun": 2
+    },
+    "browse.any": {
+      "value": 66,
+      "display": "66%"
+    },
+    "browse.validated": {
+      "value": 35,
+      "display": "35%"
+    },
+    "items.event": {
+      "value": 1,
+      "display": "1%",
+      "rerun": 1.17
+    },
+    "items.visual": {
+      "value": 3,
+      "display": "3%",
+      "rerun": 2.59
+    },
+    "items.factual": {
+      "value": 6,
+      "display": "6%",
+      "rerun": 6.21
+    },
+    "items.verbal": {
+      "value": 8,
+      "display": "8%",
+      "rerun": 7.93
+    },
+    "items.max": {
+      "value": 12,
+      "display": "12%",
+      "rerun": 12.29
+    },
+    "items.chancellor_k": {
+      "value": 67,
+      "display": "67",
+      "rerun": 67
+    },
+    "items.chancellor_n": {
+      "value": 545,
+      "display": "545",
+      "rerun": 545
+    },
+    "us.total": {
+      "value": 1494,
+      "display": "1,494"
+    },
+    "us.n": {
+      "value": 409,
+      "display": "409"
+    },
+    "us.items": {
+      "value": 35,
+      "display": "35"
+    },
+    "us.cheaters": {
+      "value": 4,
+      "display": "four"
+    },
+    "us.instances": {
+      "value": 6,
+      "display": "six"
+    },
+    "us.share": {
+      "value": 1,
+      "display": "fewer than 1%"
+    },
+    "us.browse": {
+      "value": 35,
+      "display": "35"
+    },
+    "us.selfreport": {
+      "value": 8,
+      "display": "Eight"
+    },
+    "timing.honest": {
+      "value": 34,
+      "display": "34 seconds",
+      "rerun": 33.9
+    },
+    "timing.cheated": {
+      "value": 99,
+      "display": "99 seconds",
+      "rerun": 99
+    },
+    "timing.f1": {
+      "value": 60,
+      "display": "60%"
+    },
+    "distort.models": {
+      "value": 31,
+      "display": "31"
+    },
+    "distort.tests": {
+      "value": 480,
+      "display": "480",
+      "rerun": 480
+    },
+    "distort.z": {
+      "value": 1.96,
+      "display": "1.96"
+    },
+    "distort.max_z": {
+      "value": 1.18,
+      "display": "1.18",
+      "rerun": 1.18
+    },
+    "lit.min": {
+      "value": 3,
+      "display": "3%"
+    },
+    "lit.max": {
+      "value": 72,
+      "display": "72%"
+    },
+    "model.n_obs": {
+      "value": 35486,
+      "display": "35,486",
+      "rerun": 35486
+    }
+  }
+}

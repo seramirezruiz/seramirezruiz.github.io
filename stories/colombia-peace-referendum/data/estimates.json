@@ -1,0 +1,152 @@
+[
+  {
+    "outcome": "agreement",
+    "spec": "naive",
+    "est": 0.106258,
+    "lo": -0.038935,
+    "hi": 0.251451,
+    "p": 0.151347,
+    "n": 1543,
+    "unit": "sd"
+  },
+  {
+    "outcome": "agreement",
+    "spec": "demo",
+    "est": 0.06195,
+    "lo": -0.07334,
+    "hi": 0.19724,
+    "p": 0.369223,
+    "n": 1506,
+    "unit": "sd"
+  },
+  {
+    "outcome": "agreement",
+    "spec": "conf",
+    "est": 0.035734,
+    "lo": -0.101411,
+    "hi": 0.17288,
+    "p": 0.609358,
+    "n": 1495,
+    "unit": "sd"
+  },
+  {
+    "outcome": "negotiated",
+    "spec": "naive",
+    "est": 0.116879,
+    "lo": 0.052781,
+    "hi": 0.180976,
+    "p": 0.000359,
+    "n": 1482,
+    "unit": "share"
+  },
+  {
+    "outcome": "negotiated",
+    "spec": "demo",
+    "est": 0.109206,
+    "lo": 0.04704,
+    "hi": 0.171372,
+    "p": 0.000586,
+    "n": 1449,
+    "unit": "share"
+  },
+  {
+    "outcome": "negotiated",
+    "spec": "conf",
+    "est": 0.089466,
+    "lo": 0.024242,
+    "hi": 0.15469,
+    "p": 0.007213,
+    "n": 1440,
+    "unit": "share"
+  },
+  {
+    "outcome": "concessions",
+    "spec": "naive",
+    "est": 0.241432,
+    "lo": 0.141929,
+    "hi": 0.340934,
+    "p": 2.122735e-06,
+    "n": 1556,
+    "unit": "sd"
+  },
+  {
+    "outcome": "concessions",
+    "spec": "demo",
+    "est": 0.208359,
+    "lo": 0.10994,
+    "hi": 0.306777,
+    "p": 0.000035,
+    "n": 1518,
+    "unit": "sd"
+  },
+  {
+    "outcome": "concessions",
+    "spec": "conf",
+    "est": 0.167899,
+    "lo": 0.067602,
+    "hi": 0.268196,
+    "p": 0.001048,
+    "n": 1507,
+    "unit": "sd"
+  },
+  {
+    "outcome": "bacrim",
+    "spec": "naive",
+    "est": 0.027869,
+    "lo": -0.046536,
+    "hi": 0.102273,
+    "p": 0.462625,
+    "n": 1466,
+    "unit": "share"
+  },
+  {
+    "outcome": "bacrim",
+    "spec": "demo",
+    "est": 0.02335,
+    "lo": -0.050002,
+    "hi": 0.096702,
+    "p": 0.532439,
+    "n": 1432,
+    "unit": "share"
+  },
+  {
+    "outcome": "bacrim",
+    "spec": "conf",
+    "est": 0.009633,
+    "lo": -0.064111,
+    "hi": 0.083377,
+    "p": 0.797799,
+    "n": 1422,
+    "unit": "share"
+  },
+  {
+    "outcome": "nonfarc",
+    "spec": "naive",
+    "est": 0.056216,
+    "lo": -0.036364,
+    "hi": 0.148797,
+    "p": 0.233818,
+    "n": 1556,
+    "unit": "sd"
+  },
+  {
+    "outcome": "nonfarc",
+    "spec": "demo",
+    "est": 0.025705,
+    "lo": -0.066811,
+    "hi": 0.118221,
+    "p": 0.585833,
+    "n": 1518,
+    "unit": "sd"
+  },
+  {
+    "outcome": "nonfarc",
+    "spec": "conf",
+    "est": 0.000728,
+    "lo": -0.094359,
+    "hi": 0.095815,
+    "p": 0.988016,
+    "n": 1507,
+    "unit": "sd"
+  }
+]

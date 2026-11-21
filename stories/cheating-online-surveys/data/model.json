@@ -1,0 +1,112 @@
+[
+  {
+    "term": "educ_catHigh",
+    "label": "Education: high",
+    "level": "person",
+    "est": 1.6561,
+    "lo95": 0.6192,
+    "hi95": 2.7046,
+    "lo80": 0.9557,
+    "hi80": 2.3623
+  },
+  {
+    "term": "educ_catIntermediate",
+    "label": "Education: intermediate",
+    "level": "person",
+    "est": 0.9494,
+    "lo95": -0.0825,
+    "hi95": 2.043,
+    "lo80": 0.2596,
+    "hi80": 1.6544
+  },
+  {
+    "term": "resc.internal_efficacy",
+    "label": "Feels well informed",
+    "level": "person",
+    "est": 0.9204,
+    "lo95": 0.2024,
+    "hi95": 1.6471,
+    "lo80": 0.4572,
+    "hi80": 1.3999
+  },
+  {
+    "term": "resc.resp_prop_correct_wo_cheating",
+    "label": "Knowledge score",
+    "level": "person",
+    "est": -2.1788,
+    "lo95": -2.9826,
+    "hi95": -1.4034,
+    "lo80": -2.7016,
+    "hi80": -1.6779
+  },
+  {
+    "term": "genderFemale",
+    "label": "Gender: female",
+    "level": "person",
+    "est": 0.5582,
+    "lo95": -0.0978,
+    "hi95": 1.2606,
+    "lo80": 0.1321,
+    "hi80": 0.9922
+  },
+  {
+    "term": "resc.age.2",
+    "label": "Age",
+    "level": "person",
+    "est": 0.4379,
+    "lo95": -0.2012,
+    "hi95": 1.0917,
+    "lo80": -0.0006,
+    "hi80": 0.8668
+  },
+  {
+    "term": "twohoursweek1",
+    "label": "Habitual survey-taker",
+    "level": "person",
+    "est": 0.2725,
+    "lo95": -0.4432,
+    "hi95": 0.9215,
+    "lo80": -0.1914,
+    "hi80": 0.7247
+  },
+  {
+    "term": "ques_type_diffElite - Text",
+    "label": "Item: candidate names",
+    "level": "item",
+    "est": 3.155,
+    "lo95": 2.5425,
+    "hi95": 3.7481,
+    "lo80": 2.7661,
+    "hi80": 3.5561
+  },
+  {
+    "term": "ques_type_diffFactual",
+    "label": "Item: election rules",
+    "level": "item",
+    "est": 2.3512,
+    "lo95": 1.6217,
+    "hi95": 3.0582,
+    "lo80": 1.8726,
+    "hi80": 2.8302
+  },
+  {
+    "term": "ques_type_diffElite - Pictures",
+    "label": "Item: politician photos",
+    "level": "item",
+    "est": 1.1373,
+    "lo95": 0.7047,
+    "hi95": 1.5665,
+    "lo80": 0.8493,
+    "hi80": 1.4156
+  },
+  {
+    "term": "resc.ques_prop_correct",
+    "label": "Item difficulty",
+    "level": "item",
+    "est": -0.1794,
+    "lo95": -0.552,
+    "hi95": 0.1779,
+    "lo80": -0.4194,
+    "hi80": 0.0546
+  }
+]

@@ -1,0 +1,314 @@
+{
+  "_paper_pdf": "papers/vaa-meta-analysis/vaa-meta-analysis-polcomm-full.pdf",
+  "values": {
+    "scope.studies": {
+      "value": 22,
+      "display": "22"
+    },
+    "scope.effects": {
+      "value": 55,
+      "display": "55"
+    },
+    "scope.participants": {
+      "value": 73673,
+      "display": "73,673"
+    },
+    "scope.elections": {
+      "value": 25,
+      "display": "25"
+    },
+    "scope.countries": {
+      "value": 9,
+      "display": "nine"
+    },
+    "scope.k_turnout": {
+      "value": 30,
+      "display": "30"
+    },
+    "scope.k_vote": {
+      "value": 21,
+      "display": "21"
+    },
+    "scope.k_knowledge": {
+      "value": 4,
+      "display": "four"
+    },
+    "scope.search_end": {
+      "value": "2019-09-23",
+      "display": "September 2019"
+    },
+    "reach.stemwijzer_uses": {
+      "value": 6.8,
+      "display": "6.8 million",
+      "unit": "uses"
+    },
+    "reach.nl_electorate": {
+      "value": 12.9,
+      "display": "12.9 million",
+      "unit": "eligible voters"
+    },
+    "reach.wahlomat_sessions": {
+      "value": 15.7,
+      "display": "15.7 million",
+      "unit": "user sessions"
+    },
+    "reach.de_electorate": {
+      "value": 61.7,
+      "display": "61.7 million",
+      "unit": "eligible voters"
+    },
+    "reach.smartvote_sessions": {
+      "value": 1.3,
+      "display": "1.3 million",
+      "unit": "user sessions"
+    },
+    "reach.ch_electorate": {
+      "value": 5.3,
+      "display": "5.3 million",
+      "unit": "eligible voters"
+    },
+    "reach.survey_share": {
+      "value": 20,
+      "display": "more than 20%"
+    },
+    "lit.positive": {
+      "value": 49,
+      "display": "49"
+    },
+    "lit.positive_sig": {
+      "value": 37,
+      "display": "37"
+    },
+    "lit.negative": {
+      "value": 6,
+      "display": "six"
+    },
+    "screen.identified": {
+      "value": 1230,
+      "display": "1,230"
+    },
+    "screen.drop_step2": {
+      "value": 1145,
+      "display": "1,145"
+    },
+    "screen.drop_step2_pct": {
+      "value": 93,
+      "display": "93%"
+    },
+    "screen.drop_step3": {
+      "value": 39,
+      "display": "39"
+    },
+    "screen.drop_step4": {
+      "value": 24,
+      "display": "24"
+    },
+    "screen.included": {
+      "value": 22,
+      "display": "22"
+    },
+    "screen.after_step2": {
+      "value": 85,
+      "display": "85"
+    },
+    "screen.after_step3": {
+      "value": 46,
+      "display": "46"
+    },
+    "turnout.or": {
+      "value": 1.87,
+      "display": "1.87",
+      "rerun": 1.8683
+    },
+    "turnout.ci_lo": {
+      "value": 1.5,
+      "display": "1.50"
+    },
+    "turnout.ci_hi": {
+      "value": 2.33,
+      "display": "2.33"
+    },
+    "turnout.plain": {
+      "value": 90,
+      "display": "about 90% higher"
+    },
+    "turnout.i2": {
+      "value": 83.13,
+      "display": "83%"
+    },
+    "turnout.max_or": {
+      "value": 6.3,
+      "display": "6.3"
+    },
+    "turnout.null_studies": {
+      "value": "Gemenis 2018; Munzert et al. 2020",
+      "display": "no effect at all"
+    },
+    "turnout.garzia_weight": {
+      "value": 64,
+      "display": "64%"
+    },
+    "vote.or": {
+      "value": 1.44,
+      "display": "1.44",
+      "rerun": 1.4395
+    },
+    "vote.ci_lo": {
+      "value": 1.16,
+      "display": "1.16"
+    },
+    "vote.ci_hi": {
+      "value": 1.78,
+      "display": "1.78"
+    },
+    "vote.plain": {
+      "value": 44,
+      "display": "about 44% higher"
+    },
+    "vote.i2": {
+      "value": 78,
+      "display": "78%"
+    },
+    "vote.between_elections": {
+      "value": 16,
+      "display": "16"
+    },
+    "vote.in_campaign": {
+      "value": 5,
+      "display": "5"
+    },
+    "knowledge.r": {
+      "value": 0.09,
+      "display": "0.09"
+    },
+    "knowledge.ci_lo": {
+      "value": -0.01,
+      "display": "−0.01"
+    },
+    "knowledge.ci_hi": {
+      "value": 0.18,
+      "display": "0.18"
+    },
+    "knowledge.positive": {
+      "value": 3,
+      "display": "Three out of four"
+    },
+    "turnout.exp.or": {
+      "value": 1.24,
+      "display": "1.24"
+    },
+    "turnout.exp.ci_lo": {
+      "value": 0.9,
+      "display": "0.90"
+    },
+    "turnout.exp.ci_hi": {
+      "value": 1.72,
+      "display": "1.72"
+    },
+    "turnout.exp.k": {
+      "value": 5,
+      "display": "five"
+    },
+    "vote.exp.or": {
+      "value": 1.04,
+      "display": "1.04"
+    },
+    "vote.exp.ci_lo": {
+      "value": 0.87,
+      "display": "0.87"
+    },
+    "vote.exp.ci_hi": {
+      "value": 1.25,
+      "display": "1.25"
+    },
+    "vote.exp.k": {
+      "value": 5,
+      "display": "five"
+    },
+    "turnout.onp.or": {
+      "value": 2.23,
+      "display": "2.23",
+      "k": 15
+    },
+    "turnout.op.or": {
+      "value": 2.48,
+      "display": "2.48",
+      "k": 3
+    },
+    "turnout.osm.or": {
+      "value": 1.75,
+      "display": "1.75",
+      "k": 7
+    },
+    "vote.op.or": {
+      "value": 1.5,
+      "display": "1.50",
+      "k": 14
+    },
+    "vote.osm.or": {
+      "value": 1.95,
+      "display": "1.95",
+      "k": 2
+    },
+    "bias.trimfill_missing": {
+      "value": 0,
+      "display": "no"
+    },
+    "canvass.europe_pp": {
+      "value": 0.8,
+      "display": "0.8"
+    },
+    "canvass.us_pp": {
+      "value": 2.5,
+      "display": "2.5"
+    },
+    "projected.de2009_pp": {
+      "value": 0.7,
+      "display": "0.7"
+    },
+    "projected.ch2007_pp": {
+      "value": 1.2,
+      "display": "1.2"
+    },
+    "projected.nl2006_pp": {
+      "value": 4.4,
+      "display": "4.4"
+    },
+    "projected.nl2012_pp": {
+      "value": 6.8,
+      "display": "6.8"
+    },
+    "context.first_vaa": {
+      "value": 30,
+      "display": "more than three decades ago"
+    },
+    "oped.n_encouraged": {
+      "value": 1000,
+      "display": "more than a thousand"
+    },
+    "oped.year": {
+      "value": 2017,
+      "display": "2017"
+    },
+    "newer.election_year": {
+      "value": 2024,
+      "display": "2024"
+    },
+    "newer.frese_year": {
+      "value": 2025,
+      "display": "2025"
+    },
+    "newer.germann_year": {
+      "value": 2026,
+      "display": "2026"
+    },
+    "newer.velez_year": {
+      "value": 2025,
+      "display": "2025"
+    },
+    "reach.recent_half": {
+      "value": 50,
+      "display": "more than half"
+    }
+  }
+}

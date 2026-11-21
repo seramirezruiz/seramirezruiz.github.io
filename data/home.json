@@ -1,0 +1,113 @@
+{
+  "_about": "Content of the homepage (index.html). Edit freely, then run `npm run build` in stories/_build to regenerate index.html. Text fields accept Markdown for *italics* and **bold**. Tile links: use \"ref\" with an id from data/research.json (the build picks the paper's link), or \"story\" with a Research Stories slug, or \"url\" for anything else. A link with no target is shown as plain text, with its \"note\" (e.g. in progress). Buttons under the hero line are optional: leave \"buttons\" empty to hide them.",
+  "meta": {
+    "title": "Sebastian Ramirez-Ruiz",
+    "description": "Sebastian Ramirez-Ruiz. Part-time Assistant Professor in Quantitative Methods and Max Weber Fellow at the European University Institute (EUI)."
+  },
+  "name": "Sebastian Ramirez-Ruiz",
+  "role": "Part-time Assistant Professor in Quantitative Methods and Max Weber Fellow, European University Institute",
+  "photo": {
+    "src": "assets/img/team/avatar-320.jpg",
+    "srcset": "assets/img/team/avatar-320.jpg 320w, assets/img/team/avatar-640.jpg 640w",
+    "alt": "Portrait of Sebastian Ramirez-Ruiz"
+  },
+  "hero_line": "Before information can persuade anyone in policy and political decisionmaking, it has to reach them. I study that step, what I call *the evidence interface*, and how digital infrastructures and AI are changing it.",
+  "buttons": [],
+  "social": [
+    {
+      "label": "Email",
+      "url": "mailto:sebastian.ramirezruiz@eui.eu"
+    },
+    {
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/seramirezruiz.bsky.social"
+    },
+    {
+      "label": "Mastodon",
+      "url": "https://fediscience.org/@seramirezruiz"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/seramirezruiz/"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=Gbqiu-AAAAAJ&hl=en"
+    }
+  ],
+  "tiles_heading": "What I work on",
+  "tiles": [
+    {
+      "tag": "Core agenda",
+      "title": "The evidence interface",
+      "text": "Where policymakers’ evidence comes from, which experts get heard, and how AI is starting to curate it.",
+      "links": [
+        {
+          "label": "Policy documents in 185 countries",
+          "ref": "global-north-policy"
+        },
+        {
+          "label": "Lawmakers and researchers online",
+          "ref": "legislators-researchers"
+        },
+        {
+          "label": "Dynamics in expert information provision in the Bundestag",
+          "note": "in progress"
+        }
+      ]
+    },
+    {
+      "tag": "Political behavior",
+      "title": "Voters and information",
+      "text": "How citizens respond to voting advice, to surprise election results, and to public health trade-offs.",
+      "links": [
+        {
+          "label": "Do voting advice apps work?",
+          "story": "vaa-meta-analysis"
+        },
+        {
+          "label": "Colombia’s surprise No to peace",
+          "story": "colombia-peace-referendum"
+        },
+        {
+          "label": "Vaccine priorities in five countries",
+          "ref": "covid-vaccination"
+        }
+      ]
+    },
+    {
+      "tag": "Methods and metascience",
+      "title": "How we know what we know",
+      "text": "Causal inference, measurement, original data infrastructure built from unstructured sources, and metascience.",
+      "links": [
+        {
+          "label": "Durability of political science research findings",
+          "ref": "durability-polisci",
+          "note": "in progress"
+        },
+        {
+          "label": "Cheating in online surveys",
+          "ref": "cheating-survey"
+        },
+        {
+          "label": "BEWiT: text and audio of public expert hearings",
+          "ref": "bewt-bundestag"
+        }
+      ]
+    }
+  ],
+  "about": {
+    "heading": "About me",
+    "paragraphs": [
+      "I am a political scientist and computational social scientist who studies how political elites find, use, and are shaped by evidence, and how digital infrastructures are changing each of these steps. My work sits between comparative politics, political behavior, and methodology.",
+      "Before information can persuade anyone in policy and political decisionmaking, it has to reach them. I am interested in that step, what I think of as the *evidence interface*, which is easy to overlook because it happens before any decision is visible. Legislative research services, policy aides, social networks, institutional fora, and now large language models quietly shape what counts as relevant knowledge. In my research, I find that this curation is uneven, shaped by institutional arrangements, individual capacities, and political orientations. That, in turn, shapes who gets heard and which ideas travel.",
+      "This leads me to questions such as where governments around the world source academic and policy evidence, whether legislators and scientists actually interact, which experts get a voice in parliament, and, more recently, how all of this changes when the *evidence interface* becomes algorithmically curated by AI. Alongside this core research stream, I work on broader questions in political behavior and methodology, such as how voters react to unexpected events, what voting advice applications do to voters, and how survey respondents behave when they think no one is watching. My research has been published in *Nature Human Behaviour*, *Political Science Research and Methods*, *Political Communication*, *Humanities and Social Sciences Communications*, and *Research & Politics*. The common thread is my curiosity about how people encounter and process information “in the wild.”",
+      "My general approach is computational and comparative. I work with large, messy, mostly unstructured sources, from administrative records to information hosted online, and turn them into original databases using automated pipelines. I build these with reuse in mind, so other researchers can ask their own questions with them. I also bring a strong grounding in causal inference and research design, which shapes how I think about what any data source can and cannot tell us.",
+      "The same mix shapes my teaching: causal inference, quantitative methods, data science, and automated data collection, as well as evidence use and data management for practitioners. I enjoy teaching people who will use these tools in very different ways, from doctoral students to senior policymakers, and I believe it keeps my own research grounded.",
+      "I hold a PhD from the Hertie School's Data Science Lab and am currently a Part-time Assistant Professor in Quantitative Methods and Max Weber Postdoctoral Fellow at the European University Institute."
+    ],
+    "show_on_phones": 2,
+    "more_label": "Read more about me",
+    "aside": "Beyond research: food, computers, and most importantly, bicycles."
+  }
+}

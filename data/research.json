@@ -6,7 +6,7 @@
       "year": 2026,
       "title": "Government policy documents across 185 countries largely cite Global North sources",
       "journal": "Nature Human Behaviour",
-      "journalInfo": null,
+      "journalInfo": "10, pp.1212-1222",
       "links": {
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lrfm63ylrk22",
         "preprint": "https://seramirezruiz.github.io/papers/ramirez_ruiz_senninger_policy_docs_nhb.pdf",
@@ -23,6 +23,7 @@
       "journal": "Research & Politics",
       "journalInfo": "11.1",
       "links": {
+        "story": "stories/colombia-peace-referendum/",
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lboot54c7l2q",
         "paper": "https://doi.org/10.1177/20531680241233793",
         "materials": "https://doi.org/10.7910/DVN/URT9L6"
@@ -32,12 +33,14 @@
     {
       "id": "cheating-survey",
       "authors": "Munzert, S., <i>Ramirez-Ruiz, S.</i>, Barberá, P., Guess, A.M. and Yang, J.",
-      "year": 2022,
+      "year": 2024,
       "title": "Who's cheating on your survey? A detection approach with digital trace data",
       "journal": "Political Science Research and Methods",
-      "journalInfo": "pp.1-9",
+      "journalInfo": "12(2), pp.390-398",
       "links": {
+        "story": "stories/cheating-online-surveys/",
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lboop26hkt2p",
+        "preprint": "https://osf.io/sw6f3",
         "paper": "https://doi.org/10.1017/psrm.2022.42",
         "materials": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WGWUK2"
       },
@@ -53,7 +56,7 @@
       "links": {
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lbooqxcaqh2r",
         "paper": "https://www.nature.com/articles/s41599-022-01392-1",
-        "materials": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FBUN9DF"
+        "materials": "https://doi.org/10.7910/DVN/OAMAOE"
       },
       "abstract": "Vaccination against COVID-19 is making progress globally, but vaccine doses remain a rare commodity in many parts of the world. New virus variants require vaccines to be updated, hampering the availability of effective vaccines. Policymakers have defined criteria to regulate who gets priority access to the vaccination, such as age, health complications, or those who hold system-relevant jobs. But how does the public think about vaccine allocation? To explore those preferences, we surveyed respondents in Brazil, Germany, Italy, Poland, and the United States from September to December of 2020 using ranking and forced-choice tasks. We find that public preferences are consistent with expert guidelines prioritizing health-care workers and people with medical preconditions. However, the public also considers those signing up early for vaccination and citizens of the country to be more deserving than later-comers and non-citizens. These results hold across measures, countries, and socio-demographic subgroups."
     },
@@ -65,6 +68,7 @@
       "journal": "Political Communication",
       "journalInfo": "38(6), pp.691-706",
       "links": {
+        "story": "stories/vaa-meta-analysis/",
         "thread": "https://bsky.app/profile/seramirezruiz.bsky.social/post/3lbooldug2p23",
         "paper": "https://doi.org/10.1080/10584609.2020.1843572",
         "preprint": "https://doi.org/10.31219/osf.io/utdn4",
@@ -87,7 +91,7 @@
       "id": "bewt-bundestag",
       "title": "The Bundestag Expert Witness Tracker (BEWiT): A database of German Bundestag public expert hearings",
       "links": {},
-      "abstract": "In democratic systems, legislators tackle complex policy challenges while juggling limited time, attention, and information, alongside pressures from constituents and interest groups. Although they frequently rely on external expertise, we still know surprisingly little about who is formally invited to contribute knowledge to the legislative process. This paper introduces the Bundestag Expert Witness Tracker (BEWT), a novel, hand-curated dataset documenting over 11,000 expert-affiliation pairs from more than 1,800 public committee hearings in the German Bundestag between 2009 and 2024. The database captures detailed metadata on hearings, expert identities, organizational affiliations, and—where available—linked Lobbyregister records and academic researcher profiles. These hearings offer a rare, observable arena to study how legislators curate informational inputs across diverse policy domains. To demonstrate the empirical potential of BEWT, I present two applications: one that analyzes the disciplinary and institutional composition of academic experts in committee hearings, and another that examines whether a procedural reform in the middle of the 20th legislative period—requiring disclosure of which party invited each expert—correlates with shifts in the makeup of the witness pool. This resource opens new avenues for investigating how democratic institutions filter expertise, navigate competing demands, and structure the informational foundations of policymaking."
+      "abstract": "In democratic systems, legislators tackle complex policy challenges while juggling limited time, attention, and information, alongside pressures from constituents and interest groups. Although they frequently rely on external expertise, we still know surprisingly little about who is formally invited to contribute knowledge to the legislative process. This paper introduces the Bundestag Expert Witness Tracker (BEWIT), a novel, hand-curated dataset documenting over 11,000 expert-affiliation pairs from 1,804 public committee hearings in the German Bundestag between 2009 and 2024. The database captures detailed metadata on hearings, expert identities, organizational affiliations, and—where available—linked <i>Lobbyregister</i> records and academic researcher profiles. The database further includes full-text transcripts, permanent IDs to Bundestag <i>Mediathek</i> recordings, and audio-derived features—speaker turns, word-level timestamps, and fundamental frequency (f0) contours—that allow users to study not only who speaks, but what they say and how they say it. These hearings offer a rare, observable arena to study how legislators curate informational inputs across diverse policy domains. To demonstrate the empirical potential of BEWIT, I present two applications: one that analyzes the disciplinary and institutional composition of academic experts in committee hearings, and another that examines whether a procedural reform in the middle of the 20th legislative period—requiring disclosure of which party invited each expert—correlates with shifts in the makeup of the witness pool. This resource opens new avenues for investigating how democratic institutions filter expertise, navigate competing demands, and structure the informational foundations of policymaking."
     },
     {
       "id": "scientific-reasoning",
@@ -97,11 +101,18 @@
       "abstract": "Being able to make sense of scientific evidence is a critical component in shaping effective public policy, enabling both policymakers and the public to make informed decisions on complex issues. However, existing measures of this skillset may not fully address the specific methodological and applied demands of public policy contexts. We develop the Inventory for Numeracy, Statistics, and Policy-oriented Inference and REasoning (INSPIRE), a comprehensive measurement instrument to assess competence in scientific evidence consumption in relation to public policy. The instrument integrates knowledge of statistical reasoning, data and visualization literacy, causal reasoning and inference, and the scientific method, alongside the ability to critically evaluate scientific information pertinent to policy debates. Using Item Response Theory (IRT), we systematically assess an initial item pool, resulting in an inventory of 30 items. We assessed the inventory's psychometric and substantive validity across three samples: a general population, policy students and professionals in a data science training program, and participants in a pre-election forecasting study. This allowed us to examine its performance across different groups and contexts. Results indicate good internal consistency and evidence of construct, criterion, and predictive validity. We close with considerations for potential use of the item bank in research and applied settings."
     },
     {
+      "id": "durability-polisci",
+      "title": "Assessing the durability of political science research findings",
+      "coauthors": "in collaboration with Kevin Munger, Mathieu Dubied, Marcos Echevarría Eirea, and Fabian Pawelczyk",
+      "links": {},
+      "abstract": null
+    },
+    {
       "id": "international-institutions",
       "title": "International organizations as sources of policy-relevant information for the European Union",
       "coauthors": "in collaboration with Francesca Minetto and Roman Senninger",
       "links": {},
-      "abstract": "The European Union is often portrayed as a major exporter of policy ideas and norms, yet the extent to which it relies on evidence and ideas from external actors remains a less explored aspect of European governance. This paper examines the role of international organzations (IOs) as evidence providers in EU policymaking. Drawing on a large-scale citation analysis of over 115,000 EU policy documents published between 2000 and 2024, we find that while EU institutions predominantly cite themselves, IOs consistently emerge as the most frequently referenced external actors, surpassing think tanks, academic institutions, and national governments. This pattern of IO citation has remained remarkably stable over the past two and a half decades and spans a wide array of policy domains. However, IOs with strong economic regulatory mandates—particularly the OECD, IMF, and World Bank—dominate references, across policy areas and institutions. These institutions function not as peripheral observers but as epistemic anchors within the EU's policymaking ecosystem. Our results suggest that IOs play a central and underappreciated role in informing the EU policy process. They highlight a structurally embedded relationship between the EU and IOs, with implications for how legitimacy, expertise, and authority are negotiated in European policymaking. By tracing citation patterns, this study contributes to debates on the evolving relationship between the EU and global governance institutions, evidence-based policymaking, and expert information diffusion. It invites a reassessment of the EU's knowledge politics and challenges the notion of the EU as merely an exporter of policy ideas."
+      "abstract": "The European Union is often portrayed as a major exporter of policy ideas and norms, yet the extent to which it relies on evidence and ideas from external actors remains a less explored aspect of European governance. This paper examines the role of international organizations (IOs) as evidence providers in EU policymaking. Drawing on a large-scale citation analysis of over 115,000 EU policy documents published between 2000 and 2024, we find that while EU institutions predominantly cite themselves, IOs consistently emerge as the most frequently referenced external actors, surpassing think tanks, academic institutions, and national governments. This pattern of IO citation has remained remarkably stable over the past two and a half decades and spans a wide array of policy domains. However, IOs with strong economic regulatory mandates—particularly the OECD, IMF, and World Bank—dominate references, across policy areas and institutions. These institutions function not as peripheral observers but as epistemic anchors within the EU's policymaking ecosystem. Our results suggest that IOs play a central and underappreciated role in informing the EU policy process. They highlight a structurally embedded relationship between the EU and IOs, with implications for how legitimacy, expertise, and authority are negotiated in European policymaking. By tracing citation patterns, this study contributes to debates on the evolving relationship between the EU and global governance institutions, evidence-based policymaking, and expert information diffusion. It invites a reassessment of the EU's knowledge politics and challenges the notion of the EU as merely an exporter of policy ideas."
     },
     {
       "id": "uncertain-academics",

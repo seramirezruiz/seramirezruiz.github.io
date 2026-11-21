@@ -1,0 +1,270 @@
+{
+  "_about": "Context moderators for step 10, transcribed from the paper's Appendix Tables B3–B10 (mixed-effects CCREMs). Values are log-odds as printed; the chart exponentiates them to odds ratios. Outcome 'vote' = change in vote choice.",
+  "_source": "Appendix B, appendix pp. 6–7 (Tables B3–B10); plotted in Figures B1–B4",
+  "panels": [
+    {
+      "id": "country",
+      "label": "Country",
+      "table": {
+        "turnout": "B3",
+        "vote": "B4"
+      },
+      "turnout": [
+        {
+          "level": "Finland",
+          "k": 4,
+          "est": 0.81,
+          "lo": 0.5,
+          "hi": 1.12
+        },
+        {
+          "level": "Germany",
+          "k": 4,
+          "est": 0.48,
+          "lo": 0.15,
+          "hi": 0.82
+        },
+        {
+          "level": "Netherlands",
+          "k": 6,
+          "est": 1.07,
+          "lo": 0.78,
+          "hi": 1.36
+        },
+        {
+          "level": "Switzerland",
+          "k": 5,
+          "est": 0.71,
+          "lo": 0.42,
+          "hi": 1.01
+        },
+        {
+          "level": "Other",
+          "k": 11,
+          "est": 0.43,
+          "lo": 0.19,
+          "hi": 0.67
+        }
+      ],
+      "vote": [
+        {
+          "level": "Finland",
+          "k": 3,
+          "est": 0.63,
+          "lo": 0.29,
+          "hi": 0.98
+        },
+        {
+          "level": "Germany",
+          "k": 2,
+          "est": 0.45,
+          "lo": 0.06,
+          "hi": 0.84
+        },
+        {
+          "level": "Netherlands",
+          "k": 8,
+          "est": 0.5,
+          "lo": 0.24,
+          "hi": 0.75
+        },
+        {
+          "level": "Switzerland",
+          "k": 5,
+          "est": 0.43,
+          "lo": 0.18,
+          "hi": 0.68
+        },
+        {
+          "level": "Other",
+          "k": 3,
+          "est": 0.07,
+          "lo": -0.31,
+          "hi": 0.45
+        }
+      ]
+    },
+    {
+      "id": "year",
+      "label": "Election year",
+      "table": {
+        "turnout": "B5",
+        "vote": "B6"
+      },
+      "turnout": [
+        {
+          "level": "2003–05",
+          "k": 4,
+          "est": 0.86,
+          "lo": 0.41,
+          "hi": 1.32
+        },
+        {
+          "level": "2006–08",
+          "k": 6,
+          "est": 0.75,
+          "lo": 0.39,
+          "hi": 1.12
+        },
+        {
+          "level": "2009–11",
+          "k": 9,
+          "est": 0.63,
+          "lo": 0.36,
+          "hi": 0.91
+        },
+        {
+          "level": "2012–14",
+          "k": 7,
+          "est": 0.68,
+          "lo": 0.32,
+          "hi": 1.04
+        },
+        {
+          "level": "2015–17",
+          "k": 4,
+          "est": 0.27,
+          "lo": -0.16,
+          "hi": 0.7
+        }
+      ],
+      "vote": [
+        {
+          "level": "2003–05",
+          "k": 2,
+          "est": 0.33,
+          "lo": -0.02,
+          "hi": 0.67
+        },
+        {
+          "level": "2006–08",
+          "k": 5,
+          "est": 0.34,
+          "lo": 0.08,
+          "hi": 0.61
+        },
+        {
+          "level": "2009–11",
+          "k": 10,
+          "est": 0.35,
+          "lo": 0.11,
+          "hi": 0.59
+        },
+        {
+          "level": "2012–14",
+          "k": 2,
+          "est": 0.33,
+          "lo": -0.06,
+          "hi": 0.72
+        },
+        {
+          "level": "2015–17",
+          "k": 2,
+          "est": 0.44,
+          "lo": 0.15,
+          "hi": 0.73
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "label": "Election type",
+      "table": {
+        "turnout": "B7",
+        "vote": "B8"
+      },
+      "turnout": [
+        {
+          "level": "First-order",
+          "k": 25,
+          "est": 0.65,
+          "lo": 0.41,
+          "hi": 0.89
+        },
+        {
+          "level": "Second-order",
+          "k": 5,
+          "est": 0.57,
+          "lo": 0.23,
+          "hi": 0.91
+        }
+      ],
+      "vote": [
+        {
+          "level": "First-order",
+          "k": 18,
+          "est": 0.35,
+          "lo": 0.12,
+          "hi": 0.57
+        },
+        {
+          "level": "Second-order",
+          "k": 3,
+          "est": 0.43,
+          "lo": 0.15,
+          "hi": 0.7
+        }
+      ]
+    },
+    {
+      "id": "size",
+      "label": "Sample size",
+      "table": {
+        "turnout": "B9",
+        "vote": "B10"
+      },
+      "_note": "Labels as printed in the paper (Tables B9-B10). Note: in the replication data the bands hold samples of 211-979, 1,013-1,820 and 2,356-19,592; kept as printed by author decision (2026-11-19).",
+      "level_labels": {
+        "Small": "Small (<1,000)",
+        "Medium": "Medium (2,000–3,000)",
+        "Large": "Large (>3,000)"
+      },
+      "turnout": [
+        {
+          "level": "Small",
+          "k": 8,
+          "est": 0.27,
+          "lo": -0.01,
+          "hi": 0.55
+        },
+        {
+          "level": "Medium",
+          "k": 14,
+          "est": 0.84,
+          "lo": 0.6,
+          "hi": 1.09
+        },
+        {
+          "level": "Large",
+          "k": 8,
+          "est": 0.75,
+          "lo": 0.51,
+          "hi": 0.99
+        }
+      ],
+      "vote": [
+        {
+          "level": "Small",
+          "k": 6,
+          "est": 0.35,
+          "lo": 0.1,
+          "hi": 0.59
+        },
+        {
+          "level": "Medium",
+          "k": 12,
+          "est": 0.28,
+          "lo": 0.12,
+          "hi": 0.44
+        },
+        {
+          "level": "Large",
+          "k": 3,
+          "est": 0.52,
+          "lo": 0.35,
+          "hi": 0.7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+.g-svg .t-quote {
+  fill: var(--ink);
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.g-svg .t-quote-mark {
+  fill: var(--accent);
+  font-size: 72px;
+  font-weight: 700;
+}
+.g-svg .t-quote-close {
+  fill: var(--accent);
+}
+.g-svg .t-ballot {
+  fill: var(--ink);
+  font-size: 15px;
+  font-family: var(--font-body);
+}
+.g-svg .checkbox {
+  fill: var(--surface);
+  stroke: var(--ink-2);
+  stroke-width: 1.5;
+}
+.g-svg .t-accent-label {
+  fill: var(--ink);
+}
+.g-svg .t-accent-fill {
+  fill: var(--accent);
+}
+.g-svg .chip {
+  fill: var(--surface-2);
+  stroke: var(--rule-strong);
+}
+.g-svg .checkmark--small {
+  stroke-width: 2;
+}
+.co-photo {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.co-photo img {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--surface-2);
+}
+.co-photo figcaption {
+  font-family: var(--font-head);
+  font-size: .7rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+.co-photo figcaption a {
+  color: inherit;
+}

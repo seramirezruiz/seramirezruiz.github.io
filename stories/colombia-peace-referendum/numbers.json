@@ -1,0 +1,172 @@
+{
+  "values": {
+    "event.un_date": {
+      "value": "2016-09-21",
+      "display": "September 21, 2016"
+    },
+    "event.plebiscite_date": {
+      "value": "2016-10-02",
+      "display": "October 2"
+    },
+    "event.year": {
+      "value": 2016,
+      "display": "2016"
+    },
+    "event.no_share": {
+      "value": 50.2,
+      "display": "50.2%"
+    },
+    "event.yes_share": {
+      "value": 49.8,
+      "display": "49.8%"
+    },
+    "event.margin": {
+      "value": 56000,
+      "display": "about 56,000"
+    },
+    "event.talks_years": {
+      "value": 4,
+      "display": "four years"
+    },
+    "event.ceasefire_years": {
+      "value": 2,
+      "display": "almost two years"
+    },
+    "event.revised_date": {
+      "value": "2016-11-24",
+      "display": "November 24"
+    },
+    "polls.n": {
+      "value": 11,
+      "display": "eleven"
+    },
+    "sample.n": {
+      "value": 1563,
+      "display": "1,563"
+    },
+    "sample.pre": {
+      "value": 1361,
+      "display": "1,361"
+    },
+    "sample.post": {
+      "value": 202,
+      "display": "202"
+    },
+    "sample.start": {
+      "value": "2016-08-03",
+      "display": "August 3"
+    },
+    "sample.end": {
+      "value": "2016-10-29",
+      "display": "October 29"
+    },
+    "sample.pre_weeks": {
+      "value": 9,
+      "display": "about nine weeks"
+    },
+    "sample.post_weeks": {
+      "value": 4,
+      "display": "about four weeks"
+    },
+    "table1.agreement.pre": {
+      "value": 3.8,
+      "display": "3.8"
+    },
+    "table1.agreement.post": {
+      "value": 4,
+      "display": "4.0"
+    },
+    "table1.negotiated.pre": {
+      "value": 66,
+      "display": "66%"
+    },
+    "table1.negotiated.post": {
+      "value": 78,
+      "display": "78%"
+    },
+    "table1.negotiated.change": {
+      "value": 12,
+      "display": "12"
+    },
+    "est.agreement.naive": {
+      "value": 0.11,
+      "display": "0.11"
+    },
+    "est.agreement.naive_lo": {
+      "value": -0.04,
+      "display": "−0.04"
+    },
+    "est.agreement.naive_hi": {
+      "value": 0.25,
+      "display": "0.25"
+    },
+    "est.negotiated.naive": {
+      "value": 11.7,
+      "display": "11.7"
+    },
+    "est.negotiated.conf": {
+      "value": 8.9,
+      "display": "8.9"
+    },
+    "est.negotiated.about": {
+      "value": 10,
+      "display": "around 10 percentage points"
+    },
+    "est.concessions.naive": {
+      "value": 0.24,
+      "display": "0.24"
+    },
+    "est.concessions.conf": {
+      "value": 0.17,
+      "display": "0.17"
+    },
+    "est.concessions.about": {
+      "value": 0.2,
+      "display": "around 0.2 standard deviations"
+    },
+    "est.bacrim.naive": {
+      "value": 2.8,
+      "display": "2.8"
+    },
+    "est.nonfarc.naive": {
+      "value": 0.06,
+      "display": "0.06"
+    },
+    "robust.bw_narrow": {
+      "value": 7,
+      "display": "7"
+    },
+    "robust.bw_wide": {
+      "value": 15,
+      "display": "15"
+    },
+    "robust.regions": {
+      "value": 22,
+      "display": "22"
+    },
+    "robust.prior_year": {
+      "value": 2013,
+      "display": "2013"
+    },
+    "concessions.five": {
+      "value": 5,
+      "display": "five"
+    },
+    "concessions.eight": {
+      "value": 8,
+      "display": "eight"
+    },
+    "check.problem_pre": {
+      "value": 8.9,
+      "display": "9%"
+    },
+    "check.problem_post": {
+      "value": 17.8,
+      "display": "18%"
+    },
+    "check.search_peak": {
+      "value": "2016-10-02",
+      "display": "the day of the vote"
+    }
+  }
+}

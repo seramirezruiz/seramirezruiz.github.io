@@ -1,0 +1,79 @@
+[
+  {
+    "id": "agreement",
+    "type": "Agreement",
+    "label": "Support the signed Santos–FARC agreement",
+    "variable": "colpropaz1b",
+    "scale": "1-7",
+    "pre": 3.787472,
+    "post": 4.019802,
+    "n_pre": 1341,
+    "n_post": 202
+  },
+  {
+    "id": "negotiated",
+    "type": "Negotiated end",
+    "label": "Negotiation is the best way to end the conflict",
+    "variable": "neg_farc",
+    "scale": "share",
+    "pre": 0.658631,
+    "post": 0.77551,
+    "n_pre": 1286,
+    "n_post": 196
+  },
+  {
+    "id": "politics",
+    "type": "Political",
+    "label": "Demobilized FARC members can participate in politics",
+    "variable": "colconce4",
+    "scale": "1-7",
+    "pre": 2.802849,
+    "post": 3.2,
+    "n_pre": 1334,
+    "n_post": 200
+  },
+  {
+    "id": "guarantees",
+    "type": "Political",
+    "label": "FARC parties get the same security and media guarantees",
+    "variable": "colpact11",
+    "scale": "1-7",
+    "pre": 3.421887,
+    "post": 3.83,
+    "n_pre": 1325,
+    "n_post": 200
+  },
+  {
+    "id": "five_eight",
+    "type": "Judicial",
+    "label": "5–8 years of deprivation of liberty for those who confess atrocious crimes",
+    "variable": "colpact11a",
+    "scale": "1-7",
+    "pre": 4.408683,
+    "post": 5.015,
+    "n_pre": 1336,
+    "n_post": 200
+  },
+  {
+    "id": "no_jail",
+    "type": "Judicial",
+    "label": "No jail for rank-and-file members",
+    "variable": "colpact1",
+    "scale": "1-7",
+    "pre": 2.690279,
+    "post": 3.180905,
+    "n_pre": 1327,
+    "n_post": 199
+  },
+  {
+    "id": "regions",
+    "type": "Territorial",
+    "label": "FARC members concentrate in some regions",
+    "variable": "colpact14",
+    "scale": "1-7",
+    "pre": 3.358289,
+    "post": 3.919192,
+    "n_pre": 1309,
+    "n_post": 198
+  }
+]

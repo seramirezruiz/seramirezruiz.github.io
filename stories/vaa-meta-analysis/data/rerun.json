@@ -1,0 +1,146 @@
+{
+  "generated": "2026-11-19",
+  "metafor_version": "5.0.1",
+  "pooled": {
+    "turnout": {
+      "est": 1.869634,
+      "lo": 1.49864,
+      "hi": 2.33247,
+      "k": 30,
+      "i2": 83.131864
+    },
+    "vote": {
+      "est": 1.439467,
+      "lo": 1.16094,
+      "hi": 1.784816,
+      "k": 21,
+      "i2": 77.697031
+    },
+    "knowledge": {
+      "est": 0.087184,
+      "lo": -0.009672,
+      "hi": 0.18404,
+      "k": 4,
+      "i2": 94.400851
+    }
+  },
+  "design": {
+    "turnout": {
+      "exp": {
+        "est": 1.238672,
+        "lo": 0.894541,
+        "hi": 1.71519,
+        "log_est": 0.214039,
+        "log_lo": -0.111445,
+        "log_hi": 0.539524,
+        "k": 5
+      },
+      "onp": {
+        "est": 2.230479,
+        "lo": 1.622434,
+        "hi": 3.066402,
+        "log_est": 0.802216,
+        "log_lo": 0.483927,
+        "log_hi": 1.120505,
+        "k": 15
+      },
+      "op": {
+        "est": 2.477124,
+        "lo": 1.576358,
+        "hi": 3.892609,
+        "log_est": 0.907098,
+        "log_lo": 0.455117,
+        "log_hi": 1.35908,
+        "k": 3
+      },
+      "osm": {
+        "est": 1.749323,
+        "lo": 1.022974,
+        "hi": 2.991406,
+        "log_est": 0.559229,
+        "log_lo": 0.022715,
+        "log_hi": 1.095743,
+        "k": 7
+      }
+    },
+    "vote": {
+      "exp": {
+        "est": 1.04296,
+        "lo": 0.868275,
+        "hi": 1.252789,
+        "log_est": 0.042063,
+        "log_lo": -0.141247,
+        "log_hi": 0.225373,
+        "k": 5
+      },
+      "op": {
+        "est": 1.497376,
+        "lo": 1.387325,
+        "hi": 1.616157,
+        "log_est": 0.403714,
+        "log_lo": 0.327377,
+        "log_hi": 0.480051,
+        "k": 14
+      },
+      "osm": {
+        "est": 1.94795,
+        "lo": 1.712732,
+        "hi": 2.215472,
+        "log_est": 0.666778,
+        "log_lo": 0.53809,
+        "log_hi": 0.795466,
+        "k": 2
+      }
+    }
+  },
+  "figure1_counts": [
+    {
+      "outcome": "knowledge",
+      "direction": "negative",
+      "significant_reported": true,
+      "n": 1
+    },
+    {
+      "outcome": "knowledge",
+      "direction": "positive",
+      "significant_reported": true,
+      "n": 3
+    },
+    {
+      "outcome": "turnout",
+      "direction": "negative",
+      "significant_reported": false,
+      "n": 3
+    },
+    {
+      "outcome": "turnout",
+      "direction": "positive",
+      "significant_reported": false,
+      "n": 5
+    },
+    {
+      "outcome": "turnout",
+      "direction": "positive",
+      "significant_reported": true,
+      "n": 22
+    },
+    {
+      "outcome": "vote",
+      "direction": "negative",
+      "significant_reported": false,
+      "n": 2
+    },
+    {
+      "outcome": "vote",
+      "direction": "positive",
+      "significant_reported": false,
+      "n": 7
+    },
+    {
+      "outcome": "vote",
+      "direction": "positive",
+      "significant_reported": true,
+      "n": 12
+    }
+  ]
+}

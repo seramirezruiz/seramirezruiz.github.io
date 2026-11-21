@@ -1,90 +1,47 @@
-/**
- * Teaching page renderer
- * Loads course data from JSON and renders to the page
+/*
+ * Teaching page renderer: turns data/teaching.json into the course lists.
+ *
+ * It runs at BUILD time (stories/_build/pages.mjs loads it), so teaching.html
+ * ships with every course already in the HTML.
+ *
+ * To add or change a course: edit data/teaching.json, then run `npm run build`
+ * in stories/_build. Don't edit teaching.html by hand.
  */
+(function (root) {
+  "use strict";
 
-(function() {
-  'use strict';
+  function attr(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  }
 
-  /**
-   * Render a materials link for a course
-   */
   function renderLinks(links) {
-    if (!links || !links.materials) {
-      return '';
-    }
-    return `<span class="paper-links"><span class="paper-link"><i class="fas fa-book-open" style="color:#696969"></i> <a href="${links.materials}" target="_blank">Course materials</a></span></span>`;
+    if (!links || !links.materials) return "";
+    return '\n        <div class="entry__links"><a href="' + attr(links.materials) + '" target="_blank" rel="noopener">Course materials</a></div>';
   }
 
-  /**
-   * Render an instructor course entry
-   */
-  function renderInstructorCourse(course, index, array) {
-    const upcomingBadge = course.upcoming
-      ? '<span class="teaching-upcoming">upcoming</span> '
-      : '';
-    const linksHtml = renderLinks(course.links);
-    const isLast = index === array.length - 1;
-
-    return `
-      <li>
-        ${upcomingBadge}<b>${course.title}</b>, ${course.date}<br>
-        <span class="text-muted">${course.institution}, ${course.location}</span>
-        ${linksHtml ? '<br>' + linksHtml : ''}
-      </li>
-      ${isLast ? '' : '<hr>'}`;
+  function renderInstructorCourse(c) {
+    return '      <li class="entry" id="' + attr(c.id) + '">\n' +
+      '        <h3 class="entry__title">' + (c.upcoming ? '<span class="pill">Upcoming</span> ' : "") + c.title + "</h3>\n" +
+      '        <p class="entry__meta">' + c.date + " · " + c.institution + ", " + c.location + "</p>" +
+      renderLinks(c.links) + "\n      </li>";
   }
 
-  /**
-   * Render a teaching assistant course entry
-   */
-  function renderTACourse(course, index, array) {
-    const linksHtml = renderLinks(course.links);
-    const isLast = index === array.length - 1;
-
-    return `
-      <li>
-        <b>${course.title}</b>, ${course.institution}<br>
-        <span class="text-muted">${course.terms}</span>
-        ${linksHtml ? '<br>' + linksHtml : ''}
-      </li>
-      ${isLast ? '' : '<hr>'}`;
+  function renderTACourse(c) {
+    return '      <li class="entry" id="' + attr(c.id) + '">\n' +
+      '        <h3 class="entry__title">' + c.title + "</h3>\n" +
+      '        <p class="entry__meta">' + c.institution + " · " + c.terms + "</p>" +
+      renderLinks(c.links) + "\n      </li>";
   }
 
-  /**
-   * Initialize the teaching page
-   */
-  function init() {
-    fetch('data/teaching.json', { cache: 'no-cache' })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to load teaching data');
-        }
-        return response.json();
-      })
-      .then(data => {
-        const instructorContainer = document.getElementById('instructor-list');
-        if (instructorContainer && data.instructor) {
-          instructorContainer.innerHTML = data.instructor
-            .map(renderInstructorCourse)
-            .join('');
-        }
-
-        const taContainer = document.getElementById('ta-list');
-        if (taContainer && data.teachingAssistant) {
-          taContainer.innerHTML = data.teachingAssistant
-            .map(renderTACourse)
-            .join('');
-        }
-      })
-      .catch(error => {
-        console.error('Error loading teaching data:', error);
-      });
+  /** @returns {{ instructor: string, assistant: string }} the <li> lists */
+  function render(data) {
+    return {
+      instructor: (data.instructor || []).map(renderInstructorCourse).join("\n"),
+      assistant: (data.teachingAssistant || []).map(renderTACourse).join("\n")
+    };
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
+  var Teaching = { render: render };
+  if (typeof module !== "undefined" && module.exports) module.exports = Teaching;
+  root.Teaching = Teaching;
+})(typeof window !== "undefined" ? window : globalThis);

@@ -1,0 +1,6 @@
+# GitHub Pages builds this site with Jekyll. The site itself uses no Jekyll
+# features; this file only keeps Research Stories sources from being published.
+# (Folders starting with "_" such as stories/_build are skipped automatically.)
+exclude:
+  - "stories/*/story.md"
+  - "stories/PLAYBOOK.md"

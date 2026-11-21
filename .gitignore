@@ -1,2 +1,9 @@
 # macOS system files
 .DS_Store
+stories/PLAYBOOK.md
+stories/_build/
+stories/_template/
+stories/*/story.md
+stories/*/data/*.R
+stories/*/qa.*.mjs
+stories/*/assets/README.md
